@@ -1,0 +1,242 @@
+[
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_diagnose.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_diagnose.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_bubble_bot.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\bubble_bot.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_cosmic_vignette.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\cosmic_vignette.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_fragment_map.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_card_peach.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\card_peach.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_item_message_user.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\item_message_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_image_placeholder_background.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\image_placeholder_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_card_sage.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\card_sage.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\raw_cosmic_shiva.mp4.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\raw\\cosmic_shiva.mp4"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_activity_cosmic_energy.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\activity_cosmic_energy.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_activity_chat.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_bubble_user.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\bubble_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\font_poppins.ttf.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\font\\poppins.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_warning.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_warning.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_fragment_scan.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_item_stat_card.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\item_stat_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_fragment_disease_detection.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_disease_detection.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_fragment_report.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_report.xml"
+    },
+    {
+        "merged": "com.pashuraksha.app-merged_res-81:/layout_fragment_home.xml.flat",
+        "source": "com.pashuraksha.app-main-83:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_item_message_bot.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\item_message_bot.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_cow.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_cow.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_alert.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_alert.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_card_sky.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\card_sky.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_scan.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_item_message_image.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\item_message_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_avatar_bot.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\avatar_bot.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_report.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_report.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_card_rose.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\card_rose.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_fragment_immunity.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_immunity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_card_ghibli.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\card_ghibli.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_input_rounded.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\input_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_btn_send_circle.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\btn_send_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_pill_safe.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\pill_safe.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_rounded_corner_background.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\rounded_corner_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_map.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-merged_res-81:\\drawable_ic_immunity.xml.flat",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\drawable\\ic_immunity.xml"
+    }
+]

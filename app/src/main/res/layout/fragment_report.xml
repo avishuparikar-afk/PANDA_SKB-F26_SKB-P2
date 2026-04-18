@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghibli_cream"
+    android:fillViewport="true"
+    tools:context=".ReportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="24dp"
+        android:paddingBottom="32dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:text="📖 Health Report"
+            android:textColor="@color/ink_primary"
+            android:textSize="28sp"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:letterSpacing="-0.02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/reportDateTextView"
+            android:text="📅 Report Date: —"
+            android:textColor="@color/ink_secondary"
+            android:textSize="13sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Quick Stats Cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/card_ghibli"
+                android:padding="16dp"
+                android:layout_marginEnd="6dp">
+                <TextView android:text="🐄 Scanned"
+                    android:textColor="@color/ink_secondary"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/statScannedCount"
+                    android:text="—"
+                    android:textColor="@color/ghibli_sage_deep"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/card_ghibli"
+                android:padding="16dp"
+                android:layout_marginStart="6dp">
+                <TextView android:text="✅ Healthy"
+                    android:textColor="@color/ink_secondary"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/statHealthyPct"
+                    android:text="—"
+                    android:textColor="@color/status_safe"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Village & Location -->
+        <TextView
+            android:id="@+id/reportVillageTextView"
+            android:text="📍 Village: —"
+            android:textColor="@color/ink_primary"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Scan Breakdown Card -->
+        <TextView
+            android:text="Scan Results"
+            android:textColor="@color/ink_primary"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_ghibli"
+            android:padding="18dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/reportTotalCattleTextView"
+                android:text="🐄 Total Animals Scanned: —"
+                android:textColor="@color/ink_primary"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reportHealthyTextView"
+                android:text="✅ Healthy: —"
+                android:textColor="@color/status_safe"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reportWatchTextView"
+                android:text="👁 Watch: —"
+                android:textColor="@color/status_caution"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reportAlertTextView"
+                android:text="⚠️ Alert: —"
+                android:textColor="@color/status_danger"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Immunity Card -->
+        <TextView
+            android:text="Immunity Status"
+            android:textColor="@color/ink_primary"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_ghibli"
+            android:padding="18dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/reportImmunityTextView"
+                android:text="💉 Herd Immunity Gap: —"
+                android:textColor="@color/ink_primary"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:lineSpacingMultiplier="1.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Disease Alert Card -->
+        <TextView
+            android:text="Disease Detection"
+            android:textColor="@color/ink_primary"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_ghibli"
+            android:padding="18dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/reportDiseaseTextView"
+                android:text="🦠 Disease Alert: —"
+                android:textColor="@color/ink_primary"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:lineSpacingMultiplier="1.3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Recommendations Card -->
+        <TextView
+            android:text="Action Plan"
+            android:textColor="@color/ink_primary"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_sage"
+            android:padding="18dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/reportRecommendationTextView"
+                android:text="📋 Recommendations: —"
+                android:textColor="@color/ink_primary"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

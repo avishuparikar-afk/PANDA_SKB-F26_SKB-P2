@@ -1,0 +1,69 @@
+rule_id,symptoms_required,suggested_disease,confidence,urgency,animal
+R001,fever+mouth_sores+limping,Foot and Mouth Disease,90,high,cow
+R002,skin_nodules+fever,Lumpy Skin Disease,85,high,cow
+R003,skin_nodules+fever+weakness,Lumpy Skin Disease,92,high,cow
+R004,skin_nodules+swollen_lymph,Lumpy Skin Disease,88,high,cow
+R005,udder_swelling+milk_low,Mastitis,88,high,cow
+R006,udder_swelling+thick_milk,Mastitis,92,high,cow
+R007,udder_swelling+fever,Mastitis,80,high,cow
+R008,fever+cough+breathing_difficulty,Pneumonia,82,high,cow
+R009,cough+nasal_discharge+fever,Pneumonia,78,high,cow
+R010,limping+swelling,Foot Rot,70,medium,cow
+R011,limping+wound,Foot Rot,72,medium,cow
+R012,diarrhea+weakness,Bovine Viral Diarrhea,68,medium,cow
+R013,diarrhea+fever+milk_low,Bovine Viral Diarrhea,75,medium,cow
+R014,bloat+breathing_difficulty,Bloat,88,high,cow
+R015,bloat+not_eating,Bloat,80,high,cow
+R016,abortion+weakness,Brucellosis,72,high,cow
+R017,abortion+fever,Brucellosis,78,high,cow
+R018,sudden_death+blood_discharge,Anthrax,95,critical,cow
+R019,sudden_death+fever,Anthrax,80,critical,cow
+R020,weakness+milk_low+not_eating,Ketosis,75,medium,cow
+R021,heat_stress+breathing_difficulty,Heat Stress,82,medium,cow
+R022,heat_stress+drooling+milk_low,Heat Stress,85,medium,cow
+R023,itching+hair_loss,Tick Infestation,70,low,cow
+R024,itching+weakness,Tick Infestation,65,low,cow
+R025,fever+mouth_sores+drooling,Foot and Mouth Disease,92,high,cow
+R026,mouth_sores+drooling+limping,Foot and Mouth Disease,88,high,cow
+R027,fever+swelling+sudden_death,Hemorrhagic Septicemia,92,critical,buffalo
+R028,fever+swelling+breathing_difficulty,Hemorrhagic Septicemia,88,critical,buffalo
+R029,heat_stress+breathing_difficulty,Heat Stress,82,medium,buffalo
+R030,heat_stress+drooling,Heat Stress,78,medium,buffalo
+R031,skin_nodules+fever,Lumpy Skin Disease,85,high,buffalo
+R032,udder_swelling+milk_low,Mastitis,88,high,buffalo
+R033,bloat+breathing_difficulty,Bloat,85,high,buffalo
+R034,fever+nasal_discharge+diarrhea,PPR,85,critical,goat
+R035,fever+mouth_sores+nasal_discharge,PPR,90,critical,goat
+R036,fever+cough+nasal_discharge,PPR,82,critical,goat
+R037,bloody_diarrhea+weakness,Coccidiosis,78,high,goat
+R038,diarrhea+weight_loss,Coccidiosis,72,high,goat
+R039,sudden_death+convulsions,Enterotoxemia,90,critical,goat
+R040,sudden_death+bloat,Enterotoxemia,85,critical,goat
+R041,limping+swelling,Foot Rot,70,medium,goat
+R042,cough+fever+breathing_difficulty,Pneumonia,80,high,goat
+R043,weakness+not_eating,Pregnancy Toxemia,72,high,goat
+R044,fever+mouth_sores+limping,Bluetongue,82,critical,sheep
+R045,fever+swelling+mouth_sores,Bluetongue,85,critical,sheep
+R046,skin_lesions+fever,Sheep Pox,80,high,sheep
+R047,limping+swelling,Foot Rot,75,high,sheep
+R048,sudden_death+twisted_neck,Newcastle Disease,92,critical,chicken
+R049,sudden_death+green_diarrhea,Newcastle Disease,88,critical,chicken
+R050,twisted_neck+paralysis,Newcastle Disease,90,critical,chicken
+R051,bloody_diarrhea+weakness,Coccidiosis,82,high,chicken
+R052,sudden_death+swollen_head,Avian Influenza,94,critical,chicken
+R053,sudden_death+purple_comb,Avian Influenza,90,critical,chicken
+R054,sudden_death+drop_eggs,Avian Influenza,85,critical,chicken
+R055,cough+nasal_discharge,CRD,72,medium,chicken
+R056,skin_lesions+fever,Fowl Pox,70,medium,chicken
+R057,bloody_diarrhea+vomiting,Parvovirus,90,critical,dog
+R058,diarrhea+vomiting+weakness,Parvovirus,85,critical,dog
+R059,aggression+foaming,Rabies,96,critical,dog
+R060,aggression+paralysis,Rabies,92,critical,dog
+R061,cough+nasal_discharge,Kennel Cough,72,medium,dog
+R062,fever+itching+weakness,Tick Fever,80,high,dog
+R063,fever+red_eyes+weakness,Tick Fever,78,high,dog
+R064,sudden_death+bloody_diarrhea,Duck Plague,88,critical,duck
+R065,sudden_death+swollen_head,Avian Influenza,90,critical,duck
+R066,fever+weakness+skin_lesions,African Swine Fever,92,critical,pig
+R067,fever+weakness+purple_comb,Classical Swine Fever,88,critical,pig
+R068,skin_lesions+fever+limping,Swine Erysipelas,82,high,pig

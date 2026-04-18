@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\fragment_immunity.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_immunity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\fragment_scan.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_scan.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\item_stat_card.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\item_stat_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\item_message_image.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\item_message_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\fragment_report.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_report.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\fragment_disease_detection.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_disease_detection.xml"
+    },
+    {
+        "merged": "com.pashuraksha.app-mergeDebugResources-80:/layout/fragment_home.xml",
+        "source": "com.pashuraksha.app-main-83:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\item_message_bot.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\item_message_bot.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\item_message_user.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\item_message_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\activity_chat.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\fragment_map.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\activity_cosmic_energy.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\activity_cosmic_energy.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-mergeDebugResources-80:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\ADMIN\\.gradle\\daemon\\8.4\\com.pashuraksha.app-main-83:\\layout\\activity_splash.xml"
+    }
+]

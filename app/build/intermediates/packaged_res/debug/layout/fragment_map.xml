@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_space_black"
+    tools:context=".MapFragment">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Simulation Controls -->
+    <LinearLayout
+        android:id="@+id/simulationControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#80000000"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/playPauseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:backgroundTint="@color/bioluminescent_green"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins" />
+
+            <SeekBar
+                android:id="@+id/speedSlider"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:min="1"
+                android:max="5"
+                android:progress="1"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/speedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1x"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dayCounterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day 0 - 0 farms affected"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/diseaseSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/white"
+            android:entries="@array/disease_types" />
+
+    </LinearLayout>
+
+    <!-- Data Overlays Toggle Buttons -->
+    <LinearLayout
+        android:id="@+id/dataOverlays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#80000000"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp">
+
+        <CheckBox
+            android:id="@+id/windDirectionToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌬️ Wind Direction"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:buttonTint="@color/bioluminescent_green" />
+
+        <CheckBox
+            android:id="@+id/cattleDensityToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🐄 Cattle Density"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:buttonTint="@color/bioluminescent_green" />
+
+        <CheckBox
+            android:id="@+id/vaccinationCoverageToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💉 Vaccination Coverage"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:buttonTint="@color/bioluminescent_green" />
+
+        <CheckBox
+            android:id="@+id/vetClinicToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏥 Vet Clinics"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:buttonTint="@color/bioluminescent_green" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_space_black"
+    tools:context=".ImmunityFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Herd Immunity Gap Calculator"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Input Form -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/villageNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Village Name"
+                app:hintTextColor="@color/bioluminescent_green"
+                app:boxStrokeColor="@color/bioluminescent_green"
+                android:textColorHint="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/villageNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/districtLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="District"
+                app:hintTextColor="@color/bioluminescent_green"
+                app:boxStrokeColor="@color/bioluminescent_green"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                <AutoCompleteTextView
+                    android:id="@+id/districtAutoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/totalCattleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Cattle Count"
+                app:hintTextColor="@color/bioluminescent_green"
+                app:boxStrokeColor="@color/bioluminescent_green"
+                android:textColorHint="@color/white"
+                android:layout_marginTop="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/totalCattleEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cattle Type"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="16dp" />
+
+            <RadioGroup
+                android:id="@+id/cattleTypeRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <RadioButton
+                    android:id="@+id/radioCow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cow"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:buttonTint="@color/bioluminescent_green" />
+
+                <RadioButton
+                    android:id="@+id/radioBuffalo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buffalo"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:buttonTint="@color/bioluminescent_green"
+                    android:layout_marginStart="16dp" />
+
+                <RadioButton
+                    android:id="@+id/radioMixed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mixed"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:buttonTint="@color/bioluminescent_green"
+                    android:layout_marginStart="16dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate Immunity Gap"
+                android:backgroundTint="@color/sacred_orange"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp" />
+
+            <!-- Result Display (Hidden initially) -->
+            <LinearLayout
+                android:id="@+id/resultLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="32dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Immunity Gap Percentage"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Placeholder for circular gauge (MPAndroidChart) -->
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/immunityPieChart"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Risk Assessment Card -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/deep_space_black"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="8dp"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/riskLevelTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Risk Level: MEDIUM 🟡"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="8dp" />
+
+                        <TextView
+                            android:id="@+id/outbreakProbabilityTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Outbreak probability in next 21 days: 78%"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/poppins"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Disease-specific breakdown:"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/poppins"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fmdRiskTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="• FMD Risk: HIGH 🔴"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:id="@+id/lsdRiskTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="• LSD Risk: MEDIUM 🟡"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:id="@+id/mastitisRiskTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="• Mastitis Risk: LOW 🟢"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/poppins"
+                            android:layout_marginTop="4dp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Action Recommendations -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Action Recommendations:"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/recommendationsLayout">
+                    <!-- Recommendations will be added programmatically -->
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/contactVetButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact District Veterinary Officer"
+                    android:backgroundTint="@color/bioluminescent_green"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />
+
+                <Button
+                    android:id="@+id/shareReportButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share Report (PDF Export)"
+                    android:backgroundTint="@color/cosmic_violet"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+id,stage,sign,action,urgency
+P001,early,Swollen udder,Start preparing clean dry area,low
+P002,early,Restlessness,Observe closely and keep calm,low
+P003,labor,Lying down repeatedly,Prepare clean water and clean cloth,medium
+P004,labor,Water bag visible,Wait for natural delivery keep area clean,medium
+P005,labor,Labor over 2 hours no progress,Call vet immediately danger,critical
+P006,labor,Unusual discharge with smell,Call vet immediately infection risk,critical
+P007,post,Retained placenta over 12 hours,Call vet do not pull,high
+P008,post,Calf not breathing,Clear mouth rub vigorously call vet,critical
+P009,post,Cow not eating after birth,Give warm bran mash watch for milk fever,medium
+P010,post,Weak calf cannot stand,Colostrum within 2 hours essential,high

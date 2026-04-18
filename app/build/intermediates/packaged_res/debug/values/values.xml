@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="disease_types">
+        <item>FMD</item>
+        <item>LSD</item>
+        <item>Mastitis</item>
+    </string-array>
+    <string-array name="language_options">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Marathi</item>
+        <item>Telugu</item>
+        <item>Punjabi</item>
+    </string-array>
+    <color name="bioluminescent_green">#7BA05B</color>
+    <color name="black">#000000</color>
+    <color name="cosmic_violet">#8B5CF6</color>
+    <color name="cosmic_violet_soft">#A78BFA</color>
+    <color name="cyan_glow">#6B9BC4</color>
+    <color name="deep_blue">#6B9BC4</color>
+    <color name="deep_space_black">#0A0E14</color>
+    <color name="divider_subtle">#252B36</color>
+    <color name="elevated_surface">#1C222C</color>
+    <color name="ghibli_border">#E8DEC4</color>
+    <color name="ghibli_card">#FFFDF7</color>
+    <color name="ghibli_cream">#F5EFE0</color>
+    <color name="ghibli_divider">#EDE3CB</color>
+    <color name="ghibli_moss">#8FA668</color>
+    <color name="ghibli_paper">#FAF6EC</color>
+    <color name="ghibli_peach">#F4B678</color>
+    <color name="ghibli_peach_deep">#E89B4A</color>
+    <color name="ghibli_rose">#E89B8F</color>
+    <color name="ghibli_sage">#7BA05B</color>
+    <color name="ghibli_sage_deep">#5A7A3F</color>
+    <color name="ghibli_sage_soft">#B8CDA0</color>
+    <color name="ghibli_sky">#A8C8E1</color>
+    <color name="ghibli_sky_deep">#6B9BC4</color>
+    <color name="ghibli_sun">#F5D06B</color>
+    <color name="gold">#E8B94A</color>
+    <color name="gold_soft">#F5D06B</color>
+    <color name="green_deep">#5A7A3F</color>
+    <color name="green_soft">#8FA668</color>
+    <color name="ink_muted">#A89F88</color>
+    <color name="ink_primary">#3A3628</color>
+    <color name="ink_secondary">#7A7260</color>
+    <color name="midnight_card">#141921</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="sacred_orange">#E89B4A</color>
+    <color name="sacred_orange_soft">#F4B678</color>
+    <color name="status_caution">#E8B94A</color>
+    <color name="status_critical">#A03E2E</color>
+    <color name="status_danger">#C85A4C</color>
+    <color name="status_safe">#7BA05B</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text_muted">#A89F88</color>
+    <color name="text_primary">#3A3628</color>
+    <color name="text_secondary">#7A7260</color>
+    <color name="white">#FFFFFF</color>
+    <string name="app_name">PASHU-RAKSHA</string>
+    <style name="Theme.PASHURAKSHA" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/ghibli_sage</item>
+        <item name="colorPrimaryVariant">@color/ghibli_sage_deep</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/ghibli_peach</item>
+        <item name="colorSecondaryVariant">@color/ghibli_peach_deep</item>
+        <item name="colorOnSecondary">@color/ink_primary</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/ghibli_cream</item>
+        <item name="android:windowLightStatusBar" ns1:targetApi="m">true</item>
+        <item name="android:navigationBarColor">@color/ghibli_card</item>
+        <item name="android:windowBackground">@color/ghibli_cream</item>
+        <item name="android:textColorPrimary">@color/ink_primary</item>
+        <item name="android:textColorSecondary">@color/ink_secondary</item>
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+    <style name="Theme.PASHURAKSHA.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.PASHURAKSHA.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.PASHURAKSHA.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

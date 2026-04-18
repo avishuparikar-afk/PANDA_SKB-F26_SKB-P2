@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ghibli_cream"
+    android:fillViewport="true"
+    tools:context=".SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="24dp"
+        android:paddingBottom="32dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView android:text="⚙️ Settings"
+            android:textColor="@color/ink_primary"
+            android:textSize="28sp" android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:letterSpacing="-0.02"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <TextView android:text="🌍 Language"
+            android:textColor="@color/ink_primary"
+            android:textSize="16sp" android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="28dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_ghibli"
+            android:padding="16dp"
+            android:layout_marginTop="12dp">
+
+            <Spinner
+                android:id="@+id/languageSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+        </LinearLayout>
+
+        <TextView android:text="♿ Accessibility"
+            android:textColor="@color/ink_primary"
+            android:textSize="16sp" android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="28dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_ghibli"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+                <TextView android:text="🔊  Voice assistance"
+                    android:textColor="@color/ink_primary"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/voiceSwitch"
+                    android:checked="true"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/ghibli_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp">
+                <TextView android:text="📖  Large fonts"
+                    android:textColor="@color/ink_primary"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/largeFontSwitch"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:text="ℹ️ About"
+            android:textColor="@color/ink_primary"
+            android:textSize="16sp" android:textStyle="bold"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="28dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_ghibli"
+            android:padding="18dp"
+            android:layout_marginTop="12dp">
+            <TextView android:text="🔱  Pashu-Raksha v3.0"
+                android:textColor="@color/ink_primary"
+                android:textSize="15sp" android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:text="Mini Manus AI for Livestock 🌱"
+                android:textColor="@color/ink_secondary"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:text="Team PADA • Sankalp Bharat 2026"
+                android:textColor="@color/ink_muted"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_space_black"
+    tools:context=".DiseaseDetectionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI Disease Diagnosis"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/image_placeholder_background"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Image to be analyzed" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/captureImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capture Image"
+                    android:backgroundTint="@color/bioluminescent_green"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/uploadImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Image"
+                    android:backgroundTint="@color/sacred_orange"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/analyzeImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Analyze Image"
+                android:backgroundTint="@color/cosmic_violet"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <!-- Diagnostic Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/diagnosticCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/deep_space_black"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diagnosis Result"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/diseaseTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disease: "
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/confidenceTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confidence: "
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="16sp" />
+
+                    <ProgressBar
+                        android:id="@+id/confidenceProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:progressTint="@color/bioluminescent_green" />
+
+                    <TextView
+                        android:id="@+id/symptomsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Symptoms: "
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/recommendationsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Recommendations: "
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+
+                    <TextView
+                        android:id="@+id/urgencyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Urgency Level: "
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+                    <Button
+                        android:id="@+id/findVetButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Find Nearest Vet"
+                        android:backgroundTint="@color/bioluminescent_green"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="16dp" />
+
+                    <Button
+                        android:id="@+id/aiAdviceButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ask Local AI Advice"
+                        android:backgroundTint="#FF9800"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp" />
+
+                    <Button
+                        android:id="@+id/speakResultButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Speak Result"
+                        android:backgroundTint="@color/cosmic_violet"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

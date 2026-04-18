@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Shield shape -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,24 L30,34 L30,54 C30,70.5 40.2,85.8 54,90 C67.8,85.8 78,70.5 78,54 L78,34 Z" />
+
+    <!-- Paw print - main pad -->
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M54,62 C54,62 48,56 48,52 C48,48.7 50.7,46 54,46 C57.3,46 60,48.7 60,52 C60,56 54,62 54,62 Z" />
+
+    <!-- Paw toes -->
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M46,48 A3,3 0 1,1 46.01,48" />
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M50,43 A3,3 0 1,1 50.01,43" />
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M58,43 A3,3 0 1,1 58.01,43" />
+    <path
+        android:fillColor="#1B5E20"
+        android:pathData="M62,48 A3,3 0 1,1 62.01,48" />
+
+    <!-- Cross / plus sign -->
+    <path
+        android:fillColor="#C8E6C9"
+        android:pathData="M52,68 L56,68 L56,72 L60,72 L60,76 L56,76 L56,80 L52,80 L52,76 L48,76 L48,72 L52,72 Z" />
+</vector>

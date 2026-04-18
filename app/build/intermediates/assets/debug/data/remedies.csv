@@ -1,0 +1,15 @@
+id,action_key,label_en,label_hi,label_mr,icon
+A001,isolate,Isolate Animal,पशु को अलग रखें,जनावर वेगळे ठेवा,ic_warning
+A002,give_water,Give Clean Water,साफ पानी दें,स्वच्छ पाणी द्या,ic_warning
+A003,call_vet,Call Vet Now,पशु चिकित्सक को बुलाएं,पशुवैद्यकाला बोलवा,ic_warning
+A004,clean_area,Clean Shelter,जगह साफ करें,जागा स्वच्छ करा,ic_warning
+A005,soft_feed,Soft Feed,नरम चारा दें,मऊ खाद्य द्या,ic_warning
+A006,salt_water_wash,Salt Water Wash,नमक पानी से धोएं,मीठाच्या पाण्याने धुवा,ic_warning
+A007,shade,Provide Shade,छाया दें,सावली द्या,ic_warning
+A008,rest,Rest the Animal,पशु को आराम दें,जनावराला विश्रांती द्या,ic_warning
+A009,tick_control,Tick Control,किलनी नियंत्रण,गोचीड नियंत्रण,ic_warning
+A010,vaccine,Vaccination,टीका,लसीकरण,ic_warning
+A011,electrolytes,Give ORS,ओआरएस दें,ओआरएस द्या,ic_warning
+A012,disinfect,Disinfect Shed,शेड कीटाणुरहित करें,गोठा निर्जंतुक करा,ic_warning
+A013,warm_shelter,Warm Shelter,गर्म आश्रय,उबदार निवारा,ic_warning
+A014,walk_animal,Walk the Animal,पशु को चलाएं,जनावराला चालवा,ic_warning

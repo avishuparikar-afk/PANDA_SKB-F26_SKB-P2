@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PASHU-RAKSHA</string>
+    <string-array name="disease_types">
+        <item>FMD</item>
+        <item>LSD</item>
+        <item>Mastitis</item>
+    </string-array>
+    <string-array name="language_options">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Marathi</item>
+        <item>Telugu</item>
+        <item>Punjabi</item>
+    </string-array>
+</resources>

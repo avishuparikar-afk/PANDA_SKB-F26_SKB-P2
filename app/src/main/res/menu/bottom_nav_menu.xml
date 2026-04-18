@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/scanFragment"
+        android:icon="@drawable/ic_scan"
+        android:title="Scan" />
+    <item
+        android:id="@+id/mapFragment"
+        android:icon="@drawable/ic_map"
+        android:title="Map" />
+    <item
+        android:id="@+id/diseaseDetectionFragment"
+        android:icon="@drawable/ic_diagnose"
+        android:title="Diagnose" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+</menu>

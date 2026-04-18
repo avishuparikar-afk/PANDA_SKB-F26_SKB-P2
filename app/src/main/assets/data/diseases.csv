@@ -1,0 +1,53 @@
+id,animal,disease,category,urgency,symptoms,home_care,vet_advice,icon
+D001,cow,Lumpy Skin Disease,viral,high,skin nodules|high fever|weakness|swollen lymph nodes|no appetite,isolate animal|mosquito and tick control|clean dry shelter,antibiotics and supportive care immediately,ic_warning
+D002,cow,Foot and Mouth Disease,viral,high,mouth blisters|drooling|limping|fever,soft food|salt water mouth wash|rest,vaccine and supportive medicine,ic_warning
+D003,cow,Mastitis,bacterial,high,udder swelling|thick or bloody milk|fever,warm water udder wash|discard infected milk|maintain hygiene,antibiotic treatment required,ic_warning
+D004,cow,Bovine Viral Diarrhea,viral,medium,diarrhea|weakness|fever|reduced milk,clean water|electrolytes|isolation,viral supportive treatment,ic_warning
+D005,cow,Brucellosis,bacterial,high,abortion|weak calf birth|fertility problems,separate infected animals|strict hygiene,long term antibiotics and control program,ic_warning
+D006,cow,Anthrax,bacterial,critical,sudden death|blood discharge|high fever,do not open dead body|immediate isolation,emergency report to authorities,ic_warning
+D007,cow,Pneumonia,respiratory,high,coughing|breathing difficulty|nasal discharge|fever,warm shelter|avoid dust and cold air,antibiotics required,ic_warning
+D008,cow,Foot Rot,hoof,medium,limping|bad hoof smell|swelling,hoof cleaning|dry floor|salt water wash,antibiotics and dressing,ic_warning
+D009,cow,Bloat,nutritional,high,left side swelling|restlessness|breathing problem,walk the animal|stop heavy feeding,emergency if severe,ic_warning
+D010,cow,Ketosis,metabolic,medium,milk drop|weakness|sweet smell breath,energy rich feed|proper diet,glucose therapy,ic_warning
+D011,cow,Heat Stress,environmental,medium,heavy breathing|drooling|low milk,shade and water|cooling fan or spray,supportive care,ic_warning
+D012,cow,Tick Infestation,parasitic,low,itching|hair loss|weakness,clean body|anti tick bath,anti parasitic medicine,ic_warning
+D013,buffalo,Hemorrhagic Septicemia,bacterial,critical,high fever|swollen throat|breathing difficulty|sudden death risk,keep calm environment|immediate isolation,emergency antibiotic treatment,ic_warning
+D014,buffalo,Foot and Mouth Disease,viral,high,mouth blisters|drooling|limping|fever,soft food|salt water mouth wash|rest and isolation,vaccine and supportive medicine,ic_warning
+D015,buffalo,Lumpy Skin Disease,viral,high,skin nodules|fever|weakness|reduced appetite,isolate|tick and mosquito control|clean shelter,antibiotics and supportive care,ic_warning
+D016,buffalo,Mastitis,bacterial,high,udder swelling|thick milk with clots|fever,clean udder|discard infected milk|hygiene,antibiotics required,ic_warning
+D017,buffalo,Brucellosis,bacterial,high,abortion|weak calf|infertility,separate infected animals|clean farm,long treatment and control,ic_warning
+D018,buffalo,Tuberculosis,bacterial,high,chronic cough|weight loss|weakness,isolation|avoid herd contact,diagnosis and sometimes culling,ic_warning
+D019,buffalo,Heat Stress,environmental,high,heavy breathing|drooling|low milk|lethargy,shade and water|fan or water spray,supportive care,ic_warning
+D020,buffalo,Bloat,nutritional,high,left stomach swelling|restlessness|breathing difficulty,walk animal|stop heavy feed,emergency if severe,ic_warning
+D021,buffalo,Foot Rot,hoof,medium,limping|bad hoof smell|swelling,hoof cleaning|dry ground|salt water wash,antibiotics and dressing,ic_warning
+D022,buffalo,Parasites,parasitic,low,itching|hair loss|weakness,clean body|anti tick bath,deworming medicine,ic_warning
+D023,bull,Infertility,reproductive,medium,breeding failure|low activity,proper nutrition|rest,fertility treatment,ic_warning
+D024,bull,Testicular Infection,reproductive,high,swelling|pain|reduced libido,rest|clean environment,antibiotics,ic_warning
+D025,goat,PPR,viral,critical,high fever|nasal discharge|diarrhea|mouth sores|pneumonia,isolate|clean water|soft feed,urgent vaccine and antibiotics,ic_warning
+D026,goat,Foot Rot,hoof,medium,limping|bad smell|hoof swelling,hoof trim|dry ground|salt water bath,antibiotics and dressing,ic_warning
+D027,goat,Pneumonia,respiratory,high,cough|nasal discharge|fever|breathing difficulty,warm shelter|avoid cold,antibiotics,ic_warning
+D028,goat,Coccidiosis,parasitic,high,diarrhea|weight loss|weakness,clean shed|clean water,coccidiostat medicine,ic_warning
+D029,goat,Enterotoxemia,bacterial,critical,sudden death|convulsions|bloating,avoid overfeeding|balanced diet,vaccine and emergency care,ic_warning
+D030,goat,Bloat,nutritional,high,stomach swelling|restlessness|breathing difficulty,walk animal|stop heavy feed,emergency care,ic_warning
+D031,goat,Pregnancy Toxemia,metabolic,high,weakness|not eating|sweet breath,energy feed|good nutrition,glucose and vet care,ic_warning
+D032,sheep,Foot Rot,hoof,high,severe limping|smell|swelling,hoof clean|dry bedding|salt wash,antibiotics,ic_warning
+D033,sheep,Bluetongue,viral,critical,fever|swollen tongue|mouth sores|lameness,isolate|soft feed|water,urgent vet care,ic_warning
+D034,sheep,Sheep Pox,viral,high,skin pox lesions|fever|weakness,isolation|clean shelter,supportive care,ic_warning
+D035,chicken,Newcastle Disease,viral,critical,twisted neck|paralysis|green diarrhea|sudden death,cull sick birds|disinfect shed,vaccination program required,ic_warning
+D036,chicken,Avian Influenza,viral,critical,sudden death|swollen head|purple comb|drop in eggs,report to authorities|cull and disinfect,emergency containment,ic_warning
+D037,chicken,Coccidiosis,parasitic,high,bloody diarrhea|weakness|ruffled feathers,clean litter|clean water,coccidiostat in feed,ic_warning
+D038,chicken,Fowl Cholera,bacterial,high,sudden death|swollen joints|diarrhea,disinfect shed|cull sick,antibiotics,ic_warning
+D039,chicken,CRD,respiratory,medium,coughing|sneezing|nasal discharge,dry well ventilated shed,antibiotics,ic_warning
+D040,chicken,Fowl Pox,viral,medium,pox lesions on comb|scabs,isolate|clean shed,vaccination,ic_warning
+D041,duck,Duck Plague,viral,critical,sudden death|bloody diarrhea|swollen head,isolate|disinfect pond,vaccination required,ic_warning
+D042,duck,Avian Influenza,viral,critical,sudden death|purple beak|drop in eggs,cull and disinfect|report,emergency containment,ic_warning
+D043,duck,Duck Hepatitis,viral,high,sudden death in ducklings|convulsions,clean water|good shelter,vaccination of breeders,ic_warning
+D044,pig,African Swine Fever,viral,critical,high fever|red or purple skin|sudden death,do not move pigs|report immediately,no treatment cull and contain,ic_warning
+D045,pig,Classical Swine Fever,viral,critical,fever|weakness|purple ears|diarrhea,isolate|disinfect,vaccination and emergency care,ic_warning
+D046,pig,Swine Erysipelas,bacterial,high,diamond skin lesions|fever|lameness,isolation|clean pen,antibiotics penicillin,ic_warning
+D047,pig,PRRS,viral,high,abortions|weak piglets|breathing problems,isolate|biosecurity,vaccination,ic_warning
+D048,dog,Rabies,viral,critical,aggression|foaming at mouth|paralysis,do not touch|isolate safely,no cure annual vaccine prevention,ic_warning
+D049,dog,Parvovirus,viral,critical,bloody diarrhea|vomiting|weakness,clean bedding|ORS if mild,urgent IV fluids and vet care,ic_warning
+D050,dog,Canine Distemper,viral,high,nasal discharge|cough|seizures|pads hardening,isolate|warm area,supportive vet care vaccination,ic_warning
+D051,dog,Kennel Cough,bacterial,medium,harsh dry cough|nasal discharge,rest|warm area,antibiotics if severe,ic_warning
+D052,dog,Tick Fever,parasitic,high,fever|lethargy|pale gums,remove ticks|clean bedding,doxycycline by vet,ic_warning

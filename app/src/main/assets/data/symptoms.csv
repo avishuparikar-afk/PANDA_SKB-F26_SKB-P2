@@ -1,0 +1,41 @@
+id,symptom_key,label_en,label_hi,label_mr,icon
+S001,fever,Fever,बुखार,ताप,ic_warning
+S002,not_eating,Not Eating,खाना नहीं खाता,अन्न खात नाही,ic_warning
+S003,limping,Limping,लंगड़ा रहा है,लंगडत आहे,ic_warning
+S004,swelling,Swelling,सूजन,सूज,ic_warning
+S005,wound,Wound,चोट,जखम,ic_warning
+S006,milk_low,Low Milk,दूध कम,दूध कमी,ic_warning
+S007,diarrhea,Diarrhea,दस्त,जुलाब,ic_warning
+S008,mouth_sores,Mouth Sores,मुंह के छाले,तोंडातील फोड,ic_warning
+S009,skin_nodules,Skin Lumps,त्वचा पर गांठ,त्वचेवरील गाठी,ic_warning
+S010,breathing_difficulty,Breathing Problem,सांस की तकलीफ,श्वासाचा त्रास,ic_warning
+S011,weakness,Weakness,कमजोरी,अशक्तपणा,ic_warning
+S012,nasal_discharge,Runny Nose,नाक बहना,नाकातून पाणी,ic_warning
+S013,cough,Coughing,खांसी,खोकला,ic_warning
+S014,udder_swelling,Udder Swelling,थन में सूजन,कासेवरील सूज,ic_warning
+S015,abortion,Abortion,गर्भपात,गर्भपात,ic_warning
+S016,itching,Itching,खुजली,खाज,ic_warning
+S017,bloat,Stomach Swelling,पेट फूलना,पोट फुगणे,ic_warning
+S018,sudden_death,Sudden Death,अचानक मौत,अचानक मृत्यू,ic_warning
+S019,birth_signs,Birth Signs,प्रसव के लक्षण,प्रसूतीचे लक्षण,ic_warning
+S020,heat_stress,Heat Stress,गर्मी का तनाव,उष्णतेचा ताण,ic_warning
+S021,drooling,Drooling,लार बहना,लाळ गळणे,ic_warning
+S022,weight_loss,Weight Loss,वजन कम होना,वजन कमी,ic_warning
+S023,hair_loss,Hair Loss,बाल झड़ना,केस गळणे,ic_warning
+S024,blood_discharge,Blood Discharge,खून बहना,रक्तस्राव,ic_warning
+S025,vomiting,Vomiting,उल्टी,उलटी,ic_warning
+S026,red_eyes,Red Eyes,आंखें लाल,डोळे लाल,ic_warning
+S027,thick_milk,Thick or Clotted Milk,गाढ़ा दूध,घट्ट दूध,ic_warning
+S028,swollen_lymph,Swollen Lymph Nodes,गांठे सूजी,गाठी सुजलेल्या,ic_warning
+S029,convulsions,Convulsions,ऐंठन,आकडी,ic_warning
+S030,paralysis,Paralysis,लकवा,पक्षाघात,ic_warning
+S031,twisted_neck,Twisted Neck,गर्दन मुड़ी,मान वाकडी,ic_warning
+S032,foaming,Foaming at Mouth,मुंह से झाग,तोंडातून फेस,ic_warning
+S033,aggression,Aggression,आक्रामकता,आक्रमकता,ic_warning
+S034,green_diarrhea,Green Diarrhea,हरा दस्त,हिरवा जुलाब,ic_warning
+S035,bloody_diarrhea,Bloody Diarrhea,खूनी दस्त,रक्तयुक्त जुलाब,ic_warning
+S036,purple_comb,Purple Comb/Wattle,नीला कलगी,निळी तुरा,ic_warning
+S037,drop_eggs,Egg Drop,अंडा कम,अंडी कमी,ic_warning
+S038,swollen_head,Swollen Head,सिर सूजा,डोके सुजलेले,ic_warning
+S039,skin_lesions,Skin Lesions,त्वचा पर घाव,त्वचेवर जखमा,ic_warning
+S040,reduced_appetite,Reduced Appetite,भूख कम,भूक कमी,ic_warning

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_space_black"
+    tools:context=".CosmicEnergyActivity">
+
+    <!--
+        Cosmic Shiva video in the background.
+        Source video background is crushed to pure black during ffmpeg preprocessing,
+        so the video blends seamlessly into the deep_space_black container and only
+        the glowing nebula + Shiva silhouette are visible. No audio track (stripped).
+    -->
+    <VideoView
+        android:id="@+id/cosmicShivaVideo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Soft radial vignette to sink the video edges into the deep space bg -->
+    <View
+        android:id="@+id/vignette"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/cosmic_vignette"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Original animated particles / energy lines stay on top of video -->
+    <com.pashuraksha.SplashAnimationView
+        android:id="@+id/cosmicEnergyAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/notificationBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner_background"
+        android:padding="16dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toTopOf="@id/shivaText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔱  LOOK UP — Turn your phone UP  "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tilt to reveal cosmic blessing"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shivaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="सर्वे भवन्तु सुखिनः"
+        android:textColor="@color/bioluminescent_green"
+        android:textSize="28sp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:alpha="0"
+        app:layout_constraintBottom_toTopOf="@id/shivaSubtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/shivaSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="When animals are protected, nature blesses us"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins"
+        android:alpha="0"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="64dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shivaText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

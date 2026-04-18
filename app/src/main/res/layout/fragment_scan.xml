@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deep_space_black"
+    tools:context=".ScanFragment">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.pashuraksha.OverlayView
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Bottom HUD Panel -->
+    <LinearLayout
+        android:id="@+id/hudPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#80000000"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/animalsDetectedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Animals Detected: 0"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins" />
+
+        <TextView
+            android:id="@+id/hazardsDetectedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hazards Detected: 0 ⚠️"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/scanningStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scanning..."
+            android:textColor="@color/bioluminescent_green"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/completeScanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Complete Scan"
+            android:backgroundTint="@color/sacred_orange"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
