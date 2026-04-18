@@ -1,5 +1,6 @@
 package com.pashuraksha
 
+<<<<<<< HEAD
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
@@ -23,10 +24,23 @@ import com.pashuraksha.ai.GeminiClient
 import com.pashuraksha.ai.PashuAgent
 import com.pashuraksha.data.OfflineDataRepository
 import com.pashuraksha.data.SessionData
+=======
+import android.content.Context
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
+import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.pashuraksha.ai.PashuAgent
+import com.pashuraksha.data.OfflineDataRepository
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 import com.pashuraksha.databinding.ActivityChatBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+<<<<<<< HEAD
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.BufferedReader
@@ -43,6 +57,17 @@ import java.net.URL
  *   - Online (OpenRouter Gemini Vision) + Offline (rule engine + image analysis)
  *   - Image preview bar before sending
  *   - Bottom sheet picker for camera / gallery
+=======
+
+/**
+ * Pashu Doctor chat — now powered by PashuAgent (Mini Manus AI).
+ *
+ * Every user turn runs a full 4-step agent pipeline:
+ *   perceive → diagnose → reason → act
+ *
+ * Works both online (Gemini Flash grounded on CSV findings) and offline
+ * (CSV rule engine alone). UI is identical either way.
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
  */
 class ChatActivity : AppCompatActivity() {
 
@@ -50,6 +75,7 @@ class ChatActivity : AppCompatActivity() {
     private lateinit var adapter: ChatAdapter
     private val messages = mutableListOf<ChatMessage>()
 
+<<<<<<< HEAD
     // Currently selected image for sending
     private var pendingBitmap: Bitmap? = null
 
@@ -64,13 +90,18 @@ class ChatActivity : AppCompatActivity() {
         bmp?.let { showImagePreview(it) }
     }
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityChatBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         OfflineDataRepository.ensureLoaded(this)
+<<<<<<< HEAD
         SessionData.init(this)
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
         adapter = ChatAdapter(messages)
         binding.messagesRecyclerView.apply {
@@ -83,24 +114,32 @@ class ChatActivity : AppCompatActivity() {
         adapter.addMessage(
             ChatMessage(
                 "bot",
+<<<<<<< HEAD
                 "🌿 Namaste! I'm Pashu Doctor.\n\n" +
                 "Tell me what's wrong with your animal, or send a 📷 photo for visual diagnosis.\n\n" +
                 "Try:\n" +
                 "• \"My cow has fever and mouth sores\"\n" +
                 "• \"गाय को बुखार है\"\n" +
                 "• Tap 📷 to send an animal photo"
+=======
+                "🌿 Namaste! I'm Pashu Doctor.\n\nTell me what's wrong with your animal. I'll figure out the disease, give home care steps, and tell you when to call a vet.\n\nTry:\n• \"My cow has fever and mouth sores\"\n• \"गाय को बुखार है\"\n• \"Goat is limping\""
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             )
         )
 
         updateConnectivityPill()
+<<<<<<< HEAD
 
         // Button click handlers
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         binding.btnBack.setOnClickListener { finish() }
         binding.btnSend.setOnClickListener { sendMessage() }
         binding.messageInput.setOnEditorActionListener { _, _, _ ->
             sendMessage(); true
         }
         binding.btnMic.setOnClickListener {
+<<<<<<< HEAD
             Toast.makeText(this, "Voice input coming soon — type or send a photo", Toast.LENGTH_SHORT).show()
         }
 
@@ -429,6 +468,36 @@ Keep response concise but complete.
         return Bitmap.createScaledBitmap(bitmap, (w * ratio).toInt(), (h * ratio).toInt(), true)
     }
 
+=======
+            binding.messageInput.hint = "Voice coming soon — type for now"
+        }
+    }
+
+    private fun sendMessage() {
+        val text = binding.messageInput.text?.toString()?.trim().orEmpty()
+        if (text.isEmpty()) return
+        binding.messageInput.setText("")
+
+        adapter.addMessage(ChatMessage("user", text))
+        scrollToBottom()
+        adapter.addMessage(ChatMessage("bot", "🌱 Thinking…"))
+        binding.typingIndicator.visibility = View.VISIBLE
+        scrollToBottom()
+
+        lifecycleScope.launch {
+            val result = withContext(Dispatchers.IO) {
+                PashuAgent.run(
+                    ctx = this@ChatActivity,
+                    farmerQuery = text
+                )
+            }
+            binding.typingIndicator.visibility = View.GONE
+            adapter.updateLastBot(result.rawAnswer)
+            scrollToBottom()
+        }
+    }
+
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     private fun scrollToBottom() {
         binding.messagesRecyclerView.post {
             binding.messagesRecyclerView.smoothScrollToPosition(adapter.itemCount - 1)
@@ -436,6 +505,7 @@ Keep response concise but complete.
     }
 
     private fun updateConnectivityPill() {
+<<<<<<< HEAD
         val mode = com.pashuraksha.ai.AiEngineManager.getCurrentMode(this)
         when (mode) {
             com.pashuraksha.ai.AiEngineManager.AiMode.ONLINE -> {
@@ -450,6 +520,15 @@ Keep response concise but complete.
                 binding.statusDot.setBackgroundColor(getColor(android.R.color.holo_red_light))
                 binding.statusText.text = "Offline • Basic Mode"
             }
+=======
+        val online = isOnline()
+        if (online) {
+            binding.statusDot.setBackgroundColor(getColor(R.color.status_safe))
+            binding.statusText.text = "Online • AI Agent"
+        } else {
+            binding.statusDot.setBackgroundColor(getColor(R.color.status_caution))
+            binding.statusText.text = "Offline • Edge AI"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         }
     }
 

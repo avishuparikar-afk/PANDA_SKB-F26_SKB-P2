@@ -4,7 +4,11 @@
             "outputFile": "com.pashuraksha.app-mergeDebugResources-79:/values-v26/values-v26.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\df488939a99d1459f378ec81039fd8c7\\transformed\\appcompat-1.6.1\\res\\values-v26\\values-v26.xml",
+=======
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\df488939a99d1459f378ec81039fd8c7\\transformed\\appcompat-1.6.1\\res\\values-v26\\values-v26.xml",
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

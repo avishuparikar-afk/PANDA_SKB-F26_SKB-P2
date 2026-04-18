@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+<<<<<<< HEAD
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -21,13 +22,27 @@ import kotlinx.coroutines.withContext
 
 /**
  * Redesigned home with AI Status indicator and Offline AI download.
+=======
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.pashuraksha.data.OfflineDataRepository
+import com.pashuraksha.databinding.FragmentHomeBinding
+
+/**
+ * Redesigned home — premium rural-tech aesthetic.
+ * Hero card: Scan Animal. Quick actions grid. Pashupatinath featured row.
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
  */
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
     private val homeViewModel: HomeViewModel by viewModels()
+<<<<<<< HEAD
     private var isDownloading = false
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,10 +56,17 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+<<<<<<< HEAD
         SessionData.init(requireContext())
         OfflineDataRepository.ensureLoaded(requireContext())
 
         // Observe ViewModel data
+=======
+        // Preload CSV datasets on first landing
+        OfflineDataRepository.ensureLoaded(requireContext())
+
+        // Observe ViewModel data (only fields that still exist in new layout)
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         homeViewModel.greeting.observe(viewLifecycleOwner) {
             binding.greetingTextView.text = it
         }
@@ -69,12 +91,17 @@ class HomeFragment : Fragment() {
             safeNavigate(R.id.reportFragment)
         }
 
+<<<<<<< HEAD
         // Chatbot
+=======
+        // Chatbot — deep link to disease detection (chat UI added via MainActivity intent)
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         binding.btnChatbot.setOnClickListener {
             val intent = Intent(requireContext(), ChatActivity::class.java)
             startActivity(intent)
         }
 
+<<<<<<< HEAD
         // Download Offline AI button
         binding.btnDownloadModel.setOnClickListener {
             startModelDownload()
@@ -177,6 +204,12 @@ class HomeFragment : Fragment() {
                 binding.downloadProgressBar.visibility = View.GONE
                 binding.downloadProgressText.visibility = View.GONE
             }
+=======
+        // Pashupatinath Mode - the wow moment
+        binding.btnPashupatinathMode.setOnClickListener {
+            val intent = Intent(requireContext(), CosmicEnergyActivity::class.java)
+            startActivity(intent)
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         }
     }
 

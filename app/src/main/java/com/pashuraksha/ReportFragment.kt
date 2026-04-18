@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+<<<<<<< HEAD
 import com.pashuraksha.data.SessionData
 import com.pashuraksha.databinding.FragmentReportBinding
 import java.text.SimpleDateFormat
@@ -18,11 +19,16 @@ import java.util.Locale
  * results from the current session. Updates dynamically every time user navigates here.
  * If no data collected yet, shows clear actionable guidance.
  */
+=======
+import com.pashuraksha.databinding.FragmentReportBinding
+
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 class ReportFragment : Fragment() {
 
     private var _binding: FragmentReportBinding? = null
     private val binding get() = _binding!!
 
+<<<<<<< HEAD
     override fun onCreateView(i: LayoutInflater, c: ViewGroup?, s: Bundle?): View {
         _binding = FragmentReportBinding.inflate(i, c, false)
         return binding.root
@@ -232,6 +238,17 @@ class ReportFragment : Fragment() {
         return lines.joinToString("\n")
     }
 
+=======
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentReportBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

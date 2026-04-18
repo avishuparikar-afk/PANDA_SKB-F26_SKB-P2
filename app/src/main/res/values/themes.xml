@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Theme.PASHURAKSHA" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/ghibli_sage</item>
@@ -24,3 +28,12 @@
     <style name="Theme.PASHURAKSHA.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.PASHURAKSHA.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
+<<<<<<< HEAD
+=======
+=======
+<resources>
+
+    <style name="Theme.Pashupatinath" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>
+>>>>>>> 9982f0aa84c84c29abfc5343ab8c48ae3e761ccf
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e

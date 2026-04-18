@@ -4,7 +4,21 @@
             "outputFile": "com.pashuraksha.app-mergeDebugResources-79:/values-v16/values-v16.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\df488939a99d1459f378ec81039fd8c7\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+=======
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\27ad49e110844709146a48c38c841427\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\df488939a99d1459f378ec81039fd8c7\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,6 +35,7 @@
                         "endColumns": "12",
                         "endOffsets": "289"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\27ad49e110844709146a48c38c841427\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
@@ -31,6 +46,8 @@
                         "endColumns": "65",
                         "endOffsets": "116"
                     }
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
                 }
             ]
         }

@@ -4,7 +4,11 @@
             "outputFile": "com.pashuraksha.app-mergeDebugResources-79:/values-w400dp-port-v13/values-w400dp-port-v13.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\ADMIN\\.gradle\\caches\\transforms-3\\fba9ffcb9a1bfb1e502996e1bdc8bf8d\\transformed\\material-1.11.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
+=======
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-3\\fba9ffcb9a1bfb1e502996e1bdc8bf8d\\transformed\\material-1.11.0\\res\\values-w400dp-port-v13\\values-w400dp-port-v13.xml",
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

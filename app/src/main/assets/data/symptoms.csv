@@ -19,6 +19,7 @@ S017,bloat,Stomach Swelling,पेट फूलना,पोट फुगणे,
 S018,sudden_death,Sudden Death,अचानक मौत,अचानक मृत्यू,ic_warning
 S019,birth_signs,Birth Signs,प्रसव के लक्षण,प्रसूतीचे लक्षण,ic_warning
 S020,heat_stress,Heat Stress,गर्मी का तनाव,उष्णतेचा ताण,ic_warning
+<<<<<<< HEAD
 S021,drooling,Drooling,लार बहना,लाळ गळणे,ic_warning
 S022,weight_loss,Weight Loss,वजन कम होना,वजन कमी,ic_warning
 S023,hair_loss,Hair Loss,बाल झड़ना,केस गळणे,ic_warning
@@ -39,3 +40,5 @@ S037,drop_eggs,Egg Drop,अंडा कम,अंडी कमी,ic_warning
 S038,swollen_head,Swollen Head,सिर सूजा,डोके सुजलेले,ic_warning
 S039,skin_lesions,Skin Lesions,त्वचा पर घाव,त्वचेवर जखमा,ic_warning
 S040,reduced_appetite,Reduced Appetite,भूख कम,भूक कमी,ic_warning
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e

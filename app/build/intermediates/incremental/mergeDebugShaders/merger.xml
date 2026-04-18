@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\ADMIN\Downloads\PASHU-RAKSHA-FIXED\PASHU-RAKSHA-ghibli\PASHU-RAKSHA-ghibli\app\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\ADMIN\Downloads\PASHU-RAKSHA-FIXED\PASHU-RAKSHA-ghibli\PASHU-RAKSHA-ghibli\app\src\debug\shaders"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\hp\Downloads\PASHU-RAKSHA-ghibli\PASHU-RAKSHA-ghibli\app\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\hp\Downloads\PASHU-RAKSHA-ghibli\PASHU-RAKSHA-ghibli\app\src\debug\shaders"/></dataSet></merger>
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e

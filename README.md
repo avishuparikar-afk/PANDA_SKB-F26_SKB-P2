@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## 👥 Team Details
 
 **Team Name:** PANDA  
@@ -12,6 +13,22 @@
 3. DIPAK SUNIL DHURVE  
 4. PRAJWAL MUNDRE  
 
+=======
+# 🐄 PASHU-RAKSHA — Pashupatinath AI
+
+**Tagline:** Smart Protection for Every Animal  
+**Team:** PANDA — Sankalp Bharat Hackathon 2026
+
+## 👥 Team PANDA
+
+**Team Leader:** Avish Uparikar
+
+**Team Members:**
+- Sagar Sheshrao Mankar
+- Dipak Sunil Dhurve
+- Saurabh Meshram
+- Prajwal Mundhre
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
 ---
 

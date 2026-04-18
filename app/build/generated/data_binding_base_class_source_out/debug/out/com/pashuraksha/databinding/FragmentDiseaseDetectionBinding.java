@@ -24,9 +24,12 @@ public final class FragmentDiseaseDetectionBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+<<<<<<< HEAD
   public final Button aiAdviceButton;
 
   @NonNull
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
   public final Button analyzeImageButton;
 
   @NonNull
@@ -69,16 +72,26 @@ public final class FragmentDiseaseDetectionBinding implements ViewBinding {
   public final TextView urgencyTextView;
 
   private FragmentDiseaseDetectionBinding(@NonNull ConstraintLayout rootView,
+<<<<<<< HEAD
       @NonNull Button aiAdviceButton, @NonNull Button analyzeImageButton,
       @NonNull Button captureImageButton, @NonNull ProgressBar confidenceProgressBar,
       @NonNull TextView confidenceTextView, @NonNull MaterialCardView diagnosticCard,
       @NonNull TextView diseaseTextView, @NonNull Button findVetButton,
       @NonNull ImageView imageView, @NonNull ProgressBar progressBar,
+=======
+      @NonNull Button analyzeImageButton, @NonNull Button captureImageButton,
+      @NonNull ProgressBar confidenceProgressBar, @NonNull TextView confidenceTextView,
+      @NonNull MaterialCardView diagnosticCard, @NonNull TextView diseaseTextView,
+      @NonNull Button findVetButton, @NonNull ImageView imageView, @NonNull ProgressBar progressBar,
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
       @NonNull TextView recommendationsTextView, @NonNull Button speakResultButton,
       @NonNull TextView symptomsTextView, @NonNull Button uploadImageButton,
       @NonNull TextView urgencyTextView) {
     this.rootView = rootView;
+<<<<<<< HEAD
     this.aiAdviceButton = aiAdviceButton;
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     this.analyzeImageButton = analyzeImageButton;
     this.captureImageButton = captureImageButton;
     this.confidenceProgressBar = confidenceProgressBar;
@@ -122,12 +135,15 @@ public final class FragmentDiseaseDetectionBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+<<<<<<< HEAD
       id = R.id.aiAdviceButton;
       Button aiAdviceButton = ViewBindings.findChildViewById(rootView, id);
       if (aiAdviceButton == null) {
         break missingId;
       }
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
       id = R.id.analyzeImageButton;
       Button analyzeImageButton = ViewBindings.findChildViewById(rootView, id);
       if (analyzeImageButton == null) {
@@ -212,11 +228,18 @@ public final class FragmentDiseaseDetectionBinding implements ViewBinding {
         break missingId;
       }
 
+<<<<<<< HEAD
       return new FragmentDiseaseDetectionBinding((ConstraintLayout) rootView, aiAdviceButton,
           analyzeImageButton, captureImageButton, confidenceProgressBar, confidenceTextView,
           diagnosticCard, diseaseTextView, findVetButton, imageView, progressBar,
           recommendationsTextView, speakResultButton, symptomsTextView, uploadImageButton,
           urgencyTextView);
+=======
+      return new FragmentDiseaseDetectionBinding((ConstraintLayout) rootView, analyzeImageButton,
+          captureImageButton, confidenceProgressBar, confidenceTextView, diagnosticCard,
+          diseaseTextView, findVetButton, imageView, progressBar, recommendationsTextView,
+          speakResultButton, symptomsTextView, uploadImageButton, urgencyTextView);
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

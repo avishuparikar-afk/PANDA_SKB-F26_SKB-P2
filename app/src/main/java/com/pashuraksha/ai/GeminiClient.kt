@@ -1,7 +1,10 @@
 package com.pashuraksha.ai
 
 import android.content.Context
+<<<<<<< HEAD
 import android.util.Log
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 import com.pashuraksha.BuildConfig
 import com.pashuraksha.data.OfflineDataRepository
 import org.json.JSONArray
@@ -14,6 +17,7 @@ import java.net.URL
 /**
  * AI backend for the chatbot.
  *
+<<<<<<< HEAD
  *   online  → OpenRouter API (Gemini 2.0 Flash via openrouter.ai)
  *   offline → comprehensive rule engine + keyword matcher over CSV data
  *
@@ -31,6 +35,21 @@ object GeminiClient {
 
     // Model to use — Gemini 2.0 Flash via OpenRouter (fast, cheap, multimodal)
     private const val MODEL = "google/gemini-2.0-flash-001"
+=======
+ *   online  → Google Gemini 2.0 Flash (key from BuildConfig.GEMINI_API_KEY)
+ *   offline → local keyword matcher over assets/data/chatbot.csv
+ *
+ * No Retrofit, no heavy deps — just HttpURLConnection. Keeps APK small and
+ * the code easy to audit.
+ *
+ * The API key is NEVER hardcoded. It comes from local.properties via
+ * BuildConfig so the key stays out of git.
+ */
+object GeminiClient {
+
+    private const val GEMINI_ENDPOINT =
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
     private const val SYSTEM_PROMPT = """
 You are Pashu Doctor AI, a friendly livestock health advisor for Indian rural
@@ -49,37 +68,61 @@ discharge, severe bloat, breathing failure) tell them to CALL A VET NOW.
      * Returns a user-facing string (never throws to the caller).
      */
     fun ask(ctx: Context, userMessage: String, history: List<Pair<String, String>>): String {
+<<<<<<< HEAD
         val apiKey = BuildConfig.OPENROUTER_API_KEY
 
         // If key missing or placeholder → fall straight to offline
         if (apiKey.isBlank() || apiKey.startsWith("YOUR_")) {
+=======
+        val apiKey = BuildConfig.GEMINI_API_KEY
+        // If key missing or placeholder, fall straight back to offline mode
+        if (apiKey.isBlank() || apiKey == "YOUR_GEMINI_API_KEY_HERE") {
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             return offlineAnswer(ctx, userMessage)
         }
 
         return try {
+<<<<<<< HEAD
             callOpenRouter(apiKey, userMessage, history)
         } catch (t: Throwable) {
             Log.e(TAG, "OpenRouter call failed, falling back to offline", t)
+=======
+            callGemini(apiKey, userMessage, history)
+        } catch (t: Throwable) {
+            // Network fail / API error → graceful offline fallback
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             val fallback = offlineAnswer(ctx, userMessage)
             "$fallback\n\n(offline mode — check internet for AI answers)"
         }
     }
 
+<<<<<<< HEAD
     // -----------------------------------------------------------------
     // Online — OpenRouter API (OpenAI-compatible chat completion format)
     // -----------------------------------------------------------------
     private fun callOpenRouter(
+=======
+    // ---------------------------------------------------------------------
+    // Online — Gemini 2.0 Flash via REST
+    // ---------------------------------------------------------------------
+    private fun callGemini(
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         apiKey: String,
         userMessage: String,
         history: List<Pair<String, String>>
     ): String {
+<<<<<<< HEAD
         val url = URL(OPENROUTER_ENDPOINT)
+=======
+        val url = URL("$GEMINI_ENDPOINT?key=$apiKey")
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         val conn = (url.openConnection() as HttpURLConnection).apply {
             requestMethod = "POST"
             doOutput = true
             connectTimeout = 15000
             readTimeout = 30000
             setRequestProperty("Content-Type", "application/json")
+<<<<<<< HEAD
             setRequestProperty("Authorization", "Bearer $apiKey")
             setRequestProperty("HTTP-Referer", "https://pashuraksha.app")
             setRequestProperty("X-Title", "PashuRaksha")
@@ -113,6 +156,40 @@ discharge, severe bloat, breathing failure) tell them to CALL A VET NOW.
             put("messages", messages)
             put("temperature", 0.6)
             put("max_tokens", 512)
+=======
+        }
+
+        // Build Gemini request payload
+        val contents = JSONArray()
+
+        // Replay last ~6 history turns for context
+        history.takeLast(6).forEach { (role, text) ->
+            val geminiRole = if (role == "user") "user" else "model"
+            contents.put(
+                JSONObject().apply {
+                    put("role", geminiRole)
+                    put("parts", JSONArray().put(JSONObject().put("text", text)))
+                }
+            )
+        }
+
+        // Current user turn (prepend system prompt once in front)
+        contents.put(
+            JSONObject().apply {
+                put("role", "user")
+                put("parts", JSONArray().put(
+                    JSONObject().put("text", "$SYSTEM_PROMPT\n\nFarmer: $userMessage")
+                ))
+            }
+        )
+
+        val body = JSONObject().apply {
+            put("contents", contents)
+            put("generationConfig", JSONObject().apply {
+                put("temperature", 0.6)
+                put("maxOutputTokens", 512)
+            })
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         }.toString()
 
         conn.outputStream.use { it.write(body.toByteArray(Charsets.UTF_8)) }
@@ -122,6 +199,7 @@ discharge, severe bloat, breathing failure) tell them to CALL A VET NOW.
         val response = stream.bufferedReader().use(BufferedReader::readText)
 
         if (code !in 200..299) {
+<<<<<<< HEAD
             Log.e(TAG, "OpenRouter HTTP $code: $response")
             throw RuntimeException("OpenRouter HTTP $code")
         }
@@ -173,6 +251,33 @@ discharge, severe bloat, breathing failure) tell them to CALL A VET NOW.
         var bestRow: Array<String>? = null
         var bestScore = 0
 
+=======
+            throw RuntimeException("Gemini HTTP $code: $response")
+        }
+
+        // Parse response
+        val root = JSONObject(response)
+        val candidates = root.optJSONArray("candidates") ?: return "…"
+        if (candidates.length() == 0) return "…"
+        val parts = candidates.getJSONObject(0)
+            .optJSONObject("content")
+            ?.optJSONArray("parts") ?: return "…"
+        if (parts.length() == 0) return "…"
+        return parts.getJSONObject(0).optString("text", "").trim()
+            .ifEmpty { "I didn't catch that. Please ask again." }
+    }
+
+    // ---------------------------------------------------------------------
+    // Offline — keyword matcher over assets/data/chatbot.csv
+    // ---------------------------------------------------------------------
+    private fun offlineAnswer(ctx: Context, userMessage: String): String {
+        val msg = userMessage.lowercase()
+        val rows = readChatbotCsv(ctx)
+
+        // Score each row by how many keywords appear
+        var bestRow: Array<String>? = null
+        var bestScore = 0
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         for (row in rows) {
             if (row.size < 3) continue
             val keywords = row[1].split("|").map { it.trim().lowercase() }
@@ -183,6 +288,7 @@ discharge, severe bloat, breathing failure) tell them to CALL A VET NOW.
             }
         }
 
+<<<<<<< HEAD
         return if (bestRow != null && bestScore > 0) bestRow[2] else null
     }
 
@@ -303,6 +409,32 @@ discharge, severe bloat, breathing failure) tell them to CALL A VET NOW.
         }
 
         return null
+=======
+        if (bestRow != null && bestScore > 0) {
+            return bestRow[2]
+        }
+
+        // No CSV match — try symptom-based offline diagnosis engine
+        val hits = OfflineDataRepository.getSymptoms()
+            .filter { msg.contains(it.key.replace("_", " ")) || msg.contains(it.labelEn.lowercase()) }
+            .map { it.key }
+            .toSet()
+
+        if (hits.isNotEmpty()) {
+            val results = OfflineDataRepository.diagnose(hits)
+            if (results.isNotEmpty()) {
+                val top = results.first()
+                return buildString {
+                    append("Possible: ${top.disease.name} (${top.confidence}% match)\n\n")
+                    append("Home care:\n")
+                    top.disease.homeCare.take(3).forEach { append("• $it\n") }
+                    append("\nVet: ${top.disease.vetAdvice}")
+                }
+            }
+        }
+
+        return "I'm not sure. Describe the symptoms — fever, mouth sores, swelling, diarrhea, limping, etc. Or tap the 📷 Scan Animal button for image-based check."
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     }
 
     private fun readChatbotCsv(ctx: Context): List<Array<String>> {

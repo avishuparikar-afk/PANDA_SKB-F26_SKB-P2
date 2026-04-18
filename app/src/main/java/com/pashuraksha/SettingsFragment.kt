@@ -10,7 +10,10 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
+<<<<<<< HEAD
 import com.pashuraksha.data.SessionData
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 import com.pashuraksha.databinding.FragmentSettingsBinding
 import java.util.Locale
 
@@ -19,9 +22,12 @@ class SettingsFragment : Fragment() {
     private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
 
+<<<<<<< HEAD
     // Guard against spinner triggering recreate on initial setup
     private var isInitialSetup = true
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -34,21 +40,35 @@ class SettingsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+<<<<<<< HEAD
         SessionData.init(requireContext())
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         val languages = arrayOf("English", "Hindi", "Marathi", "Telugu", "Punjabi")
         val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_dropdown_item, languages)
         binding.languageSpinner.adapter = adapter
 
+<<<<<<< HEAD
         // Restore saved language selection
         val savedLang = SessionData.getLanguage()
         val savedLangName = when (savedLang) {
+=======
+        // Set current language selection
+        val currentLocale = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            resources.configuration.locales[0]
+        } else {
+            resources.configuration.locale
+        }
+        val currentLang = when (currentLocale.language) {
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             "hi" -> "Hindi"
             "mr" -> "Marathi"
             "te" -> "Telugu"
             "pa" -> "Punjabi"
             else -> "English"
         }
+<<<<<<< HEAD
         val savedIndex = languages.indexOf(savedLangName)
         if (savedIndex >= 0) {
             binding.languageSpinner.setSelection(savedIndex)
@@ -78,6 +98,22 @@ class SettingsFragment : Fragment() {
                     setLocale(requireContext(), locale)
                     activity?.recreate()
                 }
+=======
+        binding.languageSpinner.setSelection(languages.indexOf(currentLang))
+
+        binding.languageSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val selectedLanguage = languages[position]
+                val locale = when (selectedLanguage) {
+                    "Hindi" -> Locale("hi")
+                    "Marathi" -> Locale("mr")
+                    "Telugu" -> Locale("te")
+                    "Punjabi" -> Locale("pa")
+                    else -> Locale("en")
+                }
+                setLocale(requireContext(), locale)
+                activity?.recreate() // Recreate activity to apply language change
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}

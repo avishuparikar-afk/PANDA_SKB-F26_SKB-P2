@@ -98,7 +98,11 @@
         android:paddingTop="12dp"
         android:paddingBottom="12dp"
         app:layout_constraintTop_toBottomOf="@id/divider"
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@id/imagePreviewBar"
+=======
+        app:layout_constraintBottom_toTopOf="@id/inputBar"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -113,6 +117,7 @@
         android:paddingStart="24dp"
         android:paddingBottom="8dp"
         android:visibility="gone"
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@id/imagePreviewBar"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -162,6 +167,10 @@
             android:clickable="true"
             android:focusable="true" />
     </LinearLayout>
+=======
+        app:layout_constraintBottom_toTopOf="@id/inputBar"
+        app:layout_constraintStart_toStartOf="parent" />
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
     <LinearLayout
         android:id="@+id/inputBar"
@@ -183,7 +192,11 @@
             android:gravity="center_vertical"
             android:background="@drawable/input_rounded"
             android:paddingStart="18dp"
+<<<<<<< HEAD
             android:paddingEnd="8dp"
+=======
+            android:paddingEnd="12dp"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             android:paddingTop="10dp"
             android:paddingBottom="10dp">
 
@@ -203,6 +216,7 @@
                 android:minHeight="36dp"
                 android:importantForAutofill="no" />
 
+<<<<<<< HEAD
             <!-- Image attach button -->
             <TextView
                 android:id="@+id/btnAttachImage"
@@ -215,6 +229,8 @@
                 android:focusable="true"
                 android:layout_marginEnd="4dp" />
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             <TextView
                 android:id="@+id/btnMic"
                 android:layout_width="32dp"

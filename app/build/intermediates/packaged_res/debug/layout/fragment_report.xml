@@ -19,7 +19,11 @@
         android:paddingEnd="20dp">
 
         <TextView
+<<<<<<< HEAD
             android:text="📖 Health Report"
+=======
+            android:text="📖 Reports"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             android:textColor="@color/ink_primary"
             android:textSize="28sp"
             android:fontFamily="@font/poppins"
@@ -29,21 +33,34 @@
             android:layout_height="wrap_content" />
 
         <TextView
+<<<<<<< HEAD
             android:id="@+id/reportDateTextView"
             android:text="📅 Report Date: —"
             android:textColor="@color/ink_secondary"
             android:textSize="13sp"
+=======
+            android:text="Your herd's scan history"
+            android:textColor="@color/ink_secondary"
+            android:textSize="14sp"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             android:fontFamily="@font/poppins"
             android:layout_marginTop="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
+<<<<<<< HEAD
         <!-- Quick Stats Cards -->
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+<<<<<<< HEAD
             android:layout_marginTop="20dp">
+=======
+            android:layout_marginTop="24dp">
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -51,6 +68,7 @@
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:background="@drawable/card_ghibli"
+<<<<<<< HEAD
                 android:padding="16dp"
                 android:layout_marginEnd="6dp">
                 <TextView android:text="🐄 Scanned"
@@ -67,6 +85,22 @@
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins"
                     android:layout_marginTop="2dp"
+=======
+                android:padding="18dp"
+                android:layout_marginEnd="6dp">
+                <TextView android:text="🌱 Total Scans"
+                    android:textColor="@color/ink_secondary"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="0"
+                    android:textColor="@color/ghibli_sage_deep"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="4dp"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -77,6 +111,7 @@
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:background="@drawable/card_ghibli"
+<<<<<<< HEAD
                 android:padding="16dp"
                 android:layout_marginStart="6dp">
                 <TextView android:text="✅ Healthy"
@@ -93,11 +128,28 @@
                     android:textStyle="bold"
                     android:fontFamily="@font/poppins"
                     android:layout_marginTop="2dp"
+=======
+                android:padding="18dp"
+                android:layout_marginStart="6dp">
+                <TextView android:text="🛡️ Healthy"
+                    android:textColor="@color/ink_secondary"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="100%"
+                    android:textColor="@color/ghibli_peach_deep"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="4dp"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
         </LinearLayout>
 
+<<<<<<< HEAD
         <!-- Village & Location -->
         <TextView
             android:id="@+id/reportVillageTextView"
@@ -112,11 +164,19 @@
         <!-- Scan Breakdown Card -->
         <TextView
             android:text="Scan Results"
+=======
+        <TextView
+            android:text="Recent Scans"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             android:textColor="@color/ink_primary"
             android:textSize="17sp"
             android:fontFamily="@font/poppins"
             android:textStyle="bold"
+<<<<<<< HEAD
             android:layout_marginTop="24dp"
+=======
+            android:layout_marginTop="28dp"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -124,6 +184,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+<<<<<<< HEAD
             android:background="@drawable/card_ghibli"
             android:padding="18dp"
             android:layout_marginTop="8dp">
@@ -256,6 +317,30 @@
                 android:lineSpacingMultiplier="1.4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+=======
+            android:gravity="center"
+            android:background="@drawable/card_ghibli"
+            android:padding="36dp"
+            android:layout_marginTop="12dp">
+
+            <TextView android:text="🌾" android:textSize="48sp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+            <TextView android:text="No scans yet"
+                android:textColor="@color/ink_primary"
+                android:textSize="16sp" android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+            <TextView android:text="Scan an animal to see its story here"
+                android:textColor="@color/ink_secondary"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" />
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         </LinearLayout>
 
     </LinearLayout>

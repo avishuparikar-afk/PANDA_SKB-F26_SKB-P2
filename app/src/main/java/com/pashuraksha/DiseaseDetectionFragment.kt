@@ -15,11 +15,16 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+<<<<<<< HEAD
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import android.speech.tts.TextToSpeech
 import java.util.Locale
 import com.pashuraksha.data.SessionData
+=======
+import android.speech.tts.TextToSpeech
+import java.util.Locale
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 import com.pashuraksha.databinding.FragmentDiseaseDetectionBinding
 
 class DiseaseDetectionFragment : Fragment() {
@@ -60,8 +65,11 @@ class DiseaseDetectionFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+<<<<<<< HEAD
         SessionData.init(requireContext())
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         textToSpeech = TextToSpeech(requireContext()) {
             if (it == TextToSpeech.SUCCESS) {
                 textToSpeech.language = Locale.getDefault()
@@ -73,7 +81,10 @@ class DiseaseDetectionFragment : Fragment() {
         binding.analyzeImageButton.setOnClickListener { analyzeImage() }
         binding.findVetButton.setOnClickListener { findNearestVet() }
         binding.speakResultButton.setOnClickListener { speakDiagnosisResult() }
+<<<<<<< HEAD
         binding.aiAdviceButton.setOnClickListener { getLocalAiAdvice() }
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
         observeViewModel()
     }
@@ -91,6 +102,7 @@ class DiseaseDetectionFragment : Fragment() {
         selectedImageUri?.let {
             binding.progressBar.visibility = View.VISIBLE
             binding.diagnosticCard.visibility = View.GONE
+<<<<<<< HEAD
             // Use software rendering to avoid hardware bitmap limitations
             val bitmap = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
                 ImageDecoder.decodeBitmap(
@@ -102,6 +114,14 @@ class DiseaseDetectionFragment : Fragment() {
                 MediaStore.Images.Media.getBitmap(requireContext().contentResolver, it)
             }
             diseaseDetectionViewModel.analyzeImageWithGemini(bitmap, requireContext())
+=======
+            val bitmap = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+                ImageDecoder.decodeBitmap(ImageDecoder.createSource(requireContext().contentResolver, it))
+            } else {
+                MediaStore.Images.Media.getBitmap(requireContext().contentResolver, it)
+            }
+            diseaseDetectionViewModel.analyzeImageWithGemini(bitmap)
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         } ?: run {
             Toast.makeText(requireContext(), "Please select or capture an image first", Toast.LENGTH_SHORT).show()
         }
@@ -130,6 +150,7 @@ class DiseaseDetectionFragment : Fragment() {
                 binding.recommendationsTextView.text = "Recommendations: ${it.recommendations}"
                 binding.urgencyTextView.text = "Urgency Level: ${it.urgencyLevel}"
                 binding.speakResultButton.visibility = View.VISIBLE
+<<<<<<< HEAD
 
                 // Persist diagnosis result to SessionData for ReportFragment
                 SessionData.saveDiagnosisResult(
@@ -139,6 +160,8 @@ class DiseaseDetectionFragment : Fragment() {
                     recommendations = it.recommendations,
                     urgency = it.urgencyLevel
                 )
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             }
         }
 
@@ -146,11 +169,15 @@ class DiseaseDetectionFragment : Fragment() {
             it?.let {
                 binding.progressBar.visibility = View.GONE
                 Toast.makeText(requireContext(), it, Toast.LENGTH_LONG).show()
+<<<<<<< HEAD
                 binding.recommendationsTextView.text = "AI Advice: $it" // show in UI instead of just toast
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             }
         }
     }
 
+<<<<<<< HEAD
     private fun getLocalAiAdvice() {
         val currentDiag = diseaseDetectionViewModel.diagnosisResult.value
         if (currentDiag == null) {
@@ -165,6 +192,8 @@ class DiseaseDetectionFragment : Fragment() {
         diseaseDetectionViewModel.getAiAdviceOffline(requireContext(), prompt)
     }
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     private fun getImageUri(bitmap: Bitmap): Uri {
         val path = MediaStore.Images.Media.insertImage(requireContext().contentResolver, bitmap, "PASHU_RAKSHA_IMG", null)
         return Uri.parse(path)

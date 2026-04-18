@@ -3357,11 +3357,14 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+<<<<<<< HEAD
 id aiAdviceButton
 id aiStatusCard
 id aiStatusDetail
 id aiStatusEmoji
 id aiStatusText
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id alertTitle
 id aligned
 id all
@@ -3396,15 +3399,24 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+<<<<<<< HEAD
 id btnAttachImage
 id btnBack
 id btnChatbot
 id btnDownloadModel
+=======
+id btnBack
+id btnChatbot
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id btnHealthReport
 id btnImmunityCalculator
 id btnMic
 id btnOutbreakMap
+<<<<<<< HEAD
 id btnRemoveImage
+=======
+id btnPashupatinathMode
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id btnSend
 id btnStartScan
 id bubble_description
@@ -3499,10 +3511,13 @@ id disjoint
 id districtAutoCompleteTextView
 id districtLayout
 id divider
+<<<<<<< HEAD
 id downloadAiCard
 id downloadProgressBar
 id downloadProgressText
 id downloadSizeText
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3580,8 +3595,11 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+<<<<<<< HEAD
 id imagePreview
 id imagePreviewBar
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id imageView
 id immediateStop
 id immunityFragment
@@ -3645,7 +3663,10 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id message
+<<<<<<< HEAD
 id messageImage
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id messageInput
 id messageText
 id messagesRecyclerView
@@ -3757,6 +3778,7 @@ id ratio
 id recommendationsLayout
 id recommendationsTextView
 id rectangles
+<<<<<<< HEAD
 id reportAlertTextView
 id reportDateTextView
 id reportDiseaseTextView
@@ -3767,6 +3789,9 @@ id reportRecommendationTextView
 id reportTotalCattleTextView
 id reportVillageTextView
 id reportWatchTextView
+=======
+id reportFragment
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id report_drawn
 id restart
 id resultLayout
@@ -3849,9 +3874,13 @@ id start
 id startHorizontal
 id startToEnd
 id startVertical
+<<<<<<< HEAD
 id statHealthyPct
 id statImmunityScore
 id statScannedCount
+=======
+id statImmunityScore
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id statScannedToday
 id staticLayout
 id staticPostLayout
@@ -4097,7 +4126,10 @@ layout fragment_settings
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout item_message_bot
+<<<<<<< HEAD
 layout item_message_image
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 layout item_message_user
 layout item_stat_card
 layout m3_alert_dialog

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PASHU-RAKSHA</string>
@@ -14,3 +18,11 @@
         <item>Punjabi</item>
     </string-array>
 </resources>
+<<<<<<< HEAD
+=======
+=======
+<resources>
+    <string name="app_name">Pashupatinath</string>
+</resources>
+>>>>>>> 9982f0aa84c84c29abfc5343ab8c48ae3e761ccf
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e

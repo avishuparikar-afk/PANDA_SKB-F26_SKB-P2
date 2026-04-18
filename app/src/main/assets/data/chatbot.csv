@@ -1,4 +1,5 @@
 id,keywords,response_en,response_hi
+<<<<<<< HEAD
 C001,fever|hot|temperature|bukhar,Check rectal temperature (normal: 101-102.5°F). Give shade and clean water. If fever >103°F isolate and call vet. For multiple animals with fever — suspect outbreak,बुखार के लिए: तापमान जांचें (सामान्य 101-102.5°F)। छाया और साफ पानी दें। 103°F से ऊपर हो तो अलग रखें और पशु चिकित्सक बुलाएं
 C002,milk|udder|mastitis|than,Udder issues may be Mastitis. Strip test: squeeze milk on dark surface. If clots/blood — Mastitis confirmed. Wash with warm water + Povidone Iodine. Discard milk. Call vet for antibiotics,थन की समस्या मास्टाइटिस हो सकती है। दूध की जांच करें — अगर गांठ या खून तो मास्टाइटिस है। गर्म पानी से धोएं। दूध फेंकें। पशु चिकित्सक बुलाएं
 C003,skin|nodules|lumps|lumpy|ganth,Skin lumps = likely Lumpy Skin Disease (LSD). Isolate immediately. Control mosquitoes and ticks (use Deltamethrin spray). Keep shelter clean and dry. Call vet for supportive treatment. Vaccinate rest of herd,त्वचा पर गांठ = लम्पी स्किन डिजीज हो सकती है। तुरंत अलग करें। मच्छर-किलनी नियंत्रण करें। साफ सूखा शेड। पशु चिकित्सक बुलाएं
@@ -29,3 +30,13 @@ C027,emergency|urgent|jaldi|turant,EMERGENCY? Call Govt Animal Helpline 1962 imm
 C028,goat|bakri|sheli,Goat health tips: Deworm every 3 months. PPR vaccine yearly. Provide mineral lick blocks. Clean water twice daily. Shelter must be well-ventilated and dry. Watch for PPR signs (fever+nasal discharge+diarrhea),बकरी स्वास्थ्य: हर 3 महीने कृमि निवारण। PPR टीका सालाना। खनिज ब्लॉक दें। दिन में 2 बार साफ पानी। शेड हवादार और सूखा रखें
 C029,chicken|murgi|kombdi,Poultry guide: Ranikhet vaccine Day 7+21 then every 4 months. Clean water changed 2x daily. Proper ventilation. Deep litter changed weekly. Watch for sudden death or green diarrhea (Newcastle!),मुर्गी: रानीखेत टीका 7+21 दिन फिर हर 4 महीने। पानी दिन में 2 बार बदलें। सही हवा। अचानक मौत या हरा दस्त = रानीखेत!
 C030,pig|suar|dukar,Pig health: African Swine Fever has NO treatment — biosecurity is key. Vaccinate for CSF. Deworm regularly. Watch for red/purple skin patches (ASF!) — report immediately,सुअर: अफ्रीकी स्वाइन बुखार का कोई इलाज नहीं — जैव सुरक्षा जरूरी। CSF टीका लगवाएं। लाल/बैंगनी त्वचा दिखे तो तुरंत रिपोर्ट करें
+=======
+C001,fever|hot|temperature,Check for fever give shade and water isolate if multiple animals sick,बुखार के लिए छाया और पानी दें और अगर कई पशु बीमार हों तो अलग रखें
+C002,milk|udder|mastitis,Udder issues may be mastitis wash with clean warm water discard milk call vet,थन की समस्या मास्टाइटिस हो सकती है गर्म पानी से धोएं दूध फेंकें पशु चिकित्सक को बुलाएं
+C003,skin|nodules|lumps|lumpy,Skin lumps may be Lumpy Skin Disease isolate control mosquitoes call vet,त्वचा पर गांठ लम्पी स्किन हो सकती है अलग रखें मच्छर नियंत्रण करें पशु चिकित्सक को बुलाएं
+C004,mouth|drooling|blisters|fmd,Mouth blisters may be FMD give soft food salt water wash call vet,मुंह के छाले एफएमडी हो सकते हैं नरम चारा नमक पानी से धोएं पशु चिकित्सक को बुलाएं
+C005,birth|calving|pregnant|labor,If labor over 2 hours call vet keep area clean keep water ready,अगर प्रसव 2 घंटे से ज्यादा हो तो पशु चिकित्सक को बुलाएं जगह साफ रखें पानी तैयार रखें
+C006,diarrhea|loose,Give clean water and ORS isolate from herd call vet if bloody,साफ पानी और ओआरएस दें झुंड से अलग रखें खून हो तो पशु चिकित्सक को बुलाएं
+C007,rabies|dog bite|aggressive,Rabies is fatal do not touch aggressive dogs annual vaccine prevention only,रेबीज घातक है आक्रामक कुत्ते को न छुएं वार्षिक टीका ही बचाव है
+C008,heat|summer|panting,Heat stress give shade water and cooling spray especially for buffalo,गर्मी का तनाव छाया पानी और ठंडक के लिए स्प्रे दें भैंस के लिए विशेष रूप से
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e

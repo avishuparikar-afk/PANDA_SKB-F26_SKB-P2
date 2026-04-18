@@ -13,8 +13,20 @@
 @rem See the License for the specific language governing permissions and
 @rem limitations under the License.
 @rem
+<<<<<<< HEAD
 
 @if "%DEBUG%" == "" @echo off
+=======
+<<<<<<< HEAD
+
+@if "%DEBUG%" == "" @echo off
+=======
+@rem SPDX-License-Identifier: Apache-2.0
+@rem
+
+@if "%DEBUG%"=="" @echo off
+>>>>>>> 9982f0aa84c84c29abfc5343ab8c48ae3e761ccf
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 @rem ##########################################################################
 @rem
 @rem  Gradle startup script for Windows
@@ -25,7 +37,16 @@
 if "%OS%"=="Windows_NT" setlocal
 
 set DIRNAME=%~dp0
+<<<<<<< HEAD
 if "%DIRNAME%" == "" set DIRNAME=.
+=======
+<<<<<<< HEAD
+if "%DIRNAME%" == "" set DIRNAME=.
+=======
+if "%DIRNAME%"=="" set DIRNAME=.
+@rem This is normally unused
+>>>>>>> 9982f0aa84c84c29abfc5343ab8c48ae3e761ccf
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 set APP_BASE_NAME=%~n0
 set APP_HOME=%DIRNAME%
 
@@ -40,6 +61,10 @@ if defined JAVA_HOME goto findJavaFromJavaHome
 
 set JAVA_EXE=java.exe
 %JAVA_EXE% -version >NUL 2>&1
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 if "%ERRORLEVEL%" == "0" goto execute
 
 echo.
@@ -47,6 +72,18 @@ echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PA
 echo.
 echo Please set the JAVA_HOME variable in your environment to match the
 echo location of your Java installation.
+<<<<<<< HEAD
+=======
+=======
+if %ERRORLEVEL% equ 0 goto execute
+
+echo. 1>&2
+echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
+echo. 1>&2
+echo Please set the JAVA_HOME variable in your environment to match the 1>&2
+echo location of your Java installation. 1>&2
+>>>>>>> 9982f0aa84c84c29abfc5343ab8c48ae3e761ccf
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
 goto fail
 
@@ -56,17 +93,35 @@ set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
 if exist "%JAVA_EXE%" goto execute
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 echo.
 echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
 echo.
 echo Please set the JAVA_HOME variable in your environment to match the
 echo location of your Java installation.
+<<<<<<< HEAD
+=======
+=======
+echo. 1>&2
+echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
+echo. 1>&2
+echo Please set the JAVA_HOME variable in your environment to match the 1>&2
+echo location of your Java installation. 1>&2
+>>>>>>> 9982f0aa84c84c29abfc5343ab8c48ae3e761ccf
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
 goto fail
 
 :execute
 @rem Setup the command line
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
 
 
@@ -76,12 +131,38 @@ set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
 :end
 @rem End local scope for the variables with windows NT shell
 if "%ERRORLEVEL%"=="0" goto mainEnd
+<<<<<<< HEAD
+=======
+=======
+set CLASSPATH=
+
+
+@rem Execute Gradle
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" -jar "%APP_HOME%\gradle\wrapper\gradle-wrapper.jar" %*
+
+:end
+@rem End local scope for the variables with windows NT shell
+if %ERRORLEVEL% equ 0 goto mainEnd
+>>>>>>> 9982f0aa84c84c29abfc5343ab8c48ae3e761ccf
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
 :fail
 rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
+<<<<<<< HEAD
 if  not "" == "%GRADLE_EXIT_CONSOLE%" exit 1
 exit /b 1
+=======
+<<<<<<< HEAD
+if  not "" == "%GRADLE_EXIT_CONSOLE%" exit 1
+exit /b 1
+=======
+set EXIT_CODE=%ERRORLEVEL%
+if %EXIT_CODE% equ 0 set EXIT_CODE=1
+if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
+exit /b %EXIT_CODE%
+>>>>>>> 9982f0aa84c84c29abfc5343ab8c48ae3e761ccf
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
 :mainEnd
 if "%OS%"=="Windows_NT" endlocal

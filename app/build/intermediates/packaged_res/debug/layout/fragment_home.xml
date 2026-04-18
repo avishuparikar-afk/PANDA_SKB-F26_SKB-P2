@@ -494,22 +494,37 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
+<<<<<<< HEAD
         <!-- AI Status Indicator -->
         <androidx.cardview.widget.CardView
             android:id="@+id/aiStatusCard"
+=======
+        <!-- Pashupatinath featured row -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnPashupatinathMode"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="20dp"
+<<<<<<< HEAD
             app:cardCornerRadius="20dp"
             app:cardElevation="2dp">
+=======
+            app:cardCornerRadius="28dp"
+            app:cardElevation="3dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/card_ghibli"
                 android:orientation="horizontal"
+<<<<<<< HEAD
                 android:padding="16dp"
                 android:gravity="center_vertical">
 
@@ -520,6 +535,17 @@
                     android:text="🟢"
                     android:textSize="24sp"
                     android:layout_marginEnd="12dp" />
+=======
+                android:padding="20dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔱"
+                    android:textSize="42sp"
+                    android:layout_marginEnd="16dp" />
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -528,16 +554,25 @@
                     android:orientation="vertical">
 
                     <TextView
+<<<<<<< HEAD
                         android:id="@+id/aiStatusText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Online AI Active"
                         android:textColor="@color/ink_primary"
                         android:textSize="15sp"
+=======
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pashupatinath Mode"
+                        android:textColor="@color/ghibli_peach_deep"
+                        android:textSize="18sp"
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
                         android:fontFamily="@font/poppins"
                         android:textStyle="bold" />
 
                     <TextView
+<<<<<<< HEAD
                         android:id="@+id/aiStatusDetail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -642,6 +677,23 @@
                     android:textSize="13sp"
                     app:cornerRadius="16dp"
                     app:backgroundTint="@color/ghibli_sage_deep" />
+=======
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cosmic blessing for your herd"
+                        android:textColor="@color/ink_secondary"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_marginTop="2dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textColor="@color/ink_secondary"
+                    android:textSize="28sp" />
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

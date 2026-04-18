@@ -4,7 +4,10 @@ package com.pashuraksha.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.widget.ProgressBar;
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,7 +15,10 @@ import androidx.cardview.widget.CardView;
 import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+<<<<<<< HEAD
 import com.google.android.material.button.MaterialButton;
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 import com.pashuraksha.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -23,6 +29,7 @@ public final class FragmentHomeBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
+<<<<<<< HEAD
   public final CardView aiStatusCard;
 
   @NonNull
@@ -41,6 +48,11 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final MaterialButton btnDownloadModel;
 
   @NonNull
+=======
+  public final CardView btnChatbot;
+
+  @NonNull
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
   public final CardView btnHealthReport;
 
   @NonNull
@@ -50,6 +62,7 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final CardView btnOutbreakMap;
 
   @NonNull
+<<<<<<< HEAD
   public final CardView btnStartScan;
 
   @NonNull
@@ -65,6 +78,14 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView downloadSizeText;
 
   @NonNull
+=======
+  public final CardView btnPashupatinathMode;
+
+  @NonNull
+  public final CardView btnStartScan;
+
+  @NonNull
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
   public final TextView greetingTextView;
 
   @NonNull
@@ -82,6 +103,7 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final TextView weatherTextView;
 
+<<<<<<< HEAD
   private FragmentHomeBinding(@NonNull NestedScrollView rootView, @NonNull CardView aiStatusCard,
       @NonNull TextView aiStatusDetail, @NonNull TextView aiStatusEmoji,
       @NonNull TextView aiStatusText, @NonNull CardView btnChatbot,
@@ -90,10 +112,17 @@ public final class FragmentHomeBinding implements ViewBinding {
       @NonNull CardView btnStartScan, @NonNull CardView downloadAiCard,
       @NonNull ProgressBar downloadProgressBar, @NonNull TextView downloadProgressText,
       @NonNull TextView downloadSizeText, @NonNull TextView greetingTextView,
+=======
+  private FragmentHomeBinding(@NonNull NestedScrollView rootView, @NonNull CardView btnChatbot,
+      @NonNull CardView btnHealthReport, @NonNull CardView btnImmunityCalculator,
+      @NonNull CardView btnOutbreakMap, @NonNull CardView btnPashupatinathMode,
+      @NonNull CardView btnStartScan, @NonNull TextView greetingTextView,
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
       @NonNull TextView riskChipText, @NonNull TextView statImmunityScore,
       @NonNull TextView statScannedToday, @NonNull TextView villageNameTextView,
       @NonNull TextView weatherTextView) {
     this.rootView = rootView;
+<<<<<<< HEAD
     this.aiStatusCard = aiStatusCard;
     this.aiStatusDetail = aiStatusDetail;
     this.aiStatusEmoji = aiStatusEmoji;
@@ -108,6 +137,14 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.downloadProgressBar = downloadProgressBar;
     this.downloadProgressText = downloadProgressText;
     this.downloadSizeText = downloadSizeText;
+=======
+    this.btnChatbot = btnChatbot;
+    this.btnHealthReport = btnHealthReport;
+    this.btnImmunityCalculator = btnImmunityCalculator;
+    this.btnOutbreakMap = btnOutbreakMap;
+    this.btnPashupatinathMode = btnPashupatinathMode;
+    this.btnStartScan = btnStartScan;
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     this.greetingTextView = greetingTextView;
     this.riskChipText = riskChipText;
     this.statImmunityScore = statImmunityScore;
@@ -143,6 +180,7 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+<<<<<<< HEAD
       id = R.id.aiStatusCard;
       CardView aiStatusCard = ViewBindings.findChildViewById(rootView, id);
       if (aiStatusCard == null) {
@@ -167,18 +205,23 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
       id = R.id.btnChatbot;
       CardView btnChatbot = ViewBindings.findChildViewById(rootView, id);
       if (btnChatbot == null) {
         break missingId;
       }
 
+<<<<<<< HEAD
       id = R.id.btnDownloadModel;
       MaterialButton btnDownloadModel = ViewBindings.findChildViewById(rootView, id);
       if (btnDownloadModel == null) {
         break missingId;
       }
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
       id = R.id.btnHealthReport;
       CardView btnHealthReport = ViewBindings.findChildViewById(rootView, id);
       if (btnHealthReport == null) {
@@ -197,12 +240,22 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+<<<<<<< HEAD
+=======
+      id = R.id.btnPashupatinathMode;
+      CardView btnPashupatinathMode = ViewBindings.findChildViewById(rootView, id);
+      if (btnPashupatinathMode == null) {
+        break missingId;
+      }
+
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
       id = R.id.btnStartScan;
       CardView btnStartScan = ViewBindings.findChildViewById(rootView, id);
       if (btnStartScan == null) {
         break missingId;
       }
 
+<<<<<<< HEAD
       id = R.id.downloadAiCard;
       CardView downloadAiCard = ViewBindings.findChildViewById(rootView, id);
       if (downloadAiCard == null) {
@@ -227,6 +280,8 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
       id = R.id.greetingTextView;
       TextView greetingTextView = ViewBindings.findChildViewById(rootView, id);
       if (greetingTextView == null) {
@@ -263,11 +318,18 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+<<<<<<< HEAD
       return new FragmentHomeBinding((NestedScrollView) rootView, aiStatusCard, aiStatusDetail,
           aiStatusEmoji, aiStatusText, btnChatbot, btnDownloadModel, btnHealthReport,
           btnImmunityCalculator, btnOutbreakMap, btnStartScan, downloadAiCard, downloadProgressBar,
           downloadProgressText, downloadSizeText, greetingTextView, riskChipText, statImmunityScore,
           statScannedToday, villageNameTextView, weatherTextView);
+=======
+      return new FragmentHomeBinding((NestedScrollView) rootView, btnChatbot, btnHealthReport,
+          btnImmunityCalculator, btnOutbreakMap, btnPashupatinathMode, btnStartScan,
+          greetingTextView, riskChipText, statImmunityScore, statScannedToday, villageNameTextView,
+          weatherTextView);
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

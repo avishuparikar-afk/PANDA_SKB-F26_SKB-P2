@@ -3,8 +3,11 @@ package com.pashuraksha
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+<<<<<<< HEAD
 import android.graphics.Bitmap
 import android.graphics.Color
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 import android.graphics.RectF
 import android.os.Bundle
 import android.util.Log
@@ -21,9 +24,13 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.objects.ObjectDetection
+<<<<<<< HEAD
 import com.google.mlkit.vision.objects.DetectedObject
 import com.google.mlkit.vision.objects.defaults.ObjectDetectorOptions
 import com.pashuraksha.data.SessionData
+=======
+import com.google.mlkit.vision.objects.defaults.ObjectDetectorOptions
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 import com.pashuraksha.databinding.FragmentScanBinding
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
@@ -32,6 +39,7 @@ class ScanFragment : Fragment() {
 
     private var _binding: FragmentScanBinding? = null
     private val binding get() = _binding!!
+<<<<<<< HEAD
     private lateinit var cameraExecutor: ExecutorService
     private var peakLivestockCount = 0
 
@@ -48,6 +56,19 @@ class ScanFragment : Fragment() {
 
     override fun onCreateView(i: LayoutInflater, c: ViewGroup?, s: Bundle?): View {
         _binding = FragmentScanBinding.inflate(i, c, false)
+=======
+
+    private lateinit var cameraExecutor: ExecutorService
+    private val REQUEST_CODE_PERMISSIONS = 10
+    private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA)
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentScanBinding.inflate(inflater, container, false)
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         return binding.root
     }
 
@@ -55,6 +76,7 @@ class ScanFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         cameraExecutor = Executors.newSingleThreadExecutor()
 
+<<<<<<< HEAD
         SessionData.init(requireContext())
 
         if (allPermissionsGranted()) startCamera()
@@ -80,11 +102,24 @@ class ScanFragment : Fragment() {
 
             val intent = Intent(requireContext(), CosmicEnergyActivity::class.java)
             intent.putExtra("animals_scanned", count)
+=======
+        if (allPermissionsGranted()) {
+            startCamera()
+        } else {
+            ActivityCompat.requestPermissions(
+                requireActivity(), REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS
+            )
+        }
+
+        binding.completeScanButton.setOnClickListener {
+            val intent = Intent(requireContext(), CosmicEnergyActivity::class.java)
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
             startActivity(intent)
         }
     }
 
     private fun startCamera() {
+<<<<<<< HEAD
         val providerFuture = ProcessCameraProvider.getInstance(requireContext())
         providerFuture.addListener({
             val cameraProvider = providerFuture.get()
@@ -189,15 +224,77 @@ class ScanFragment : Fragment() {
         }
     }
 
+=======
+        val cameraProviderFuture = ProcessCameraProvider.getInstance(requireContext())
+
+        cameraProviderFuture.addListener({
+            val cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()
+
+            val preview = Preview.Builder()
+                .build()
+                .also { it.setSurfaceProvider(binding.previewView.surfaceProvider) }
+
+            val imageAnalyzer = ImageAnalysis.Builder()
+                .build()
+                .also { it.setAnalyzer(cameraExecutor, ObjectDetectorAnalyzer { detectedObjects ->
+                    // Update UI with detected objects
+                    val boundingBoxes = mutableListOf<RectF>()
+                    val labels = mutableListOf<String>()
+                    val healthScores = mutableListOf<String>()
+
+                    detectedObjects.forEachIndexed { index, obj ->
+                        val rect = obj.boundingBox
+                        val box = RectF(rect.left.toFloat(), rect.top.toFloat(), rect.right.toFloat(), rect.bottom.toFloat())
+                        val label = obj.labels.firstOrNull()?.text ?: "Animal ${index + 1}"
+                        val healthScore = "98% Healthy" // Placeholder
+
+                        boundingBoxes.add(box)
+                        labels.add(label)
+                        healthScores.add(healthScore)
+                    }
+                    binding.overlayView.drawBoundingBoxes(boundingBoxes, labels, healthScores)
+                    binding.animalsDetectedTextView.text = "Animals Detected: ${detectedObjects.size}"
+                    // TODO: Implement hazard detection and update hazardsDetectedTextView
+                }) }
+
+            val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
+
+            try {
+                cameraProvider.unbindAll()
+                cameraProvider.bindToLifecycle(this, cameraSelector, preview, imageAnalyzer)
+            } catch (exc: Exception) {
+                Log.e(TAG, "Use case binding failed", exc)
+            }
+
+        }, ContextCompat.getMainExecutor(requireContext()))
+    }
+
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
         ContextCompat.checkSelfPermission(requireContext(), it) == PackageManager.PERMISSION_GRANTED
     }
 
+<<<<<<< HEAD
     override fun onRequestPermissionsResult(rc: Int, perms: Array<String>, results: IntArray) {
         super.onRequestPermissionsResult(rc, perms, results)
         if (rc == REQUEST_CODE_PERMISSIONS) {
             if (allPermissionsGranted()) startCamera()
             else Toast.makeText(requireContext(), "Camera permission required", Toast.LENGTH_SHORT).show()
+=======
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == REQUEST_CODE_PERMISSIONS) {
+            if (allPermissionsGranted()) {
+                startCamera()
+            } else {
+                Toast.makeText(requireContext(), "Permissions not granted by the user.", Toast.LENGTH_SHORT).show()
+                // Optionally navigate back or disable camera features
+            }
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         }
     }
 
@@ -207,6 +304,7 @@ class ScanFragment : Fragment() {
         _binding = null
     }
 
+<<<<<<< HEAD
     companion object { private const val TAG = "ScanFragment" }
 }
 
@@ -232,11 +330,22 @@ class LivestockAnalyzer(
 ) : ImageAnalysis.Analyzer {
 
     private val options = ObjectDetectorOptions.Builder()
+=======
+    companion object {
+        private const val TAG = "ScanFragment"
+    }
+}
+
+// Placeholder for ML Kit Object Detector Analyzer
+class ObjectDetectorAnalyzer(private val listener: (List<com.google.mlkit.vision.objects.DetectedObject>) -> Unit) : ImageAnalysis.Analyzer {
+    private val objectDetectorOptions = ObjectDetectorOptions.Builder()
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         .setDetectorMode(ObjectDetectorOptions.STREAM_MODE)
         .enableMultipleObjects()
         .enableClassification()
         .build()
 
+<<<<<<< HEAD
     private val detector = ObjectDetection.getClient(options)
 
     // Latest camera frame bitmap for color sampling
@@ -398,5 +507,22 @@ class LivestockAnalyzer(
             }
             .addOnFailureListener { Log.e("LivestockAnalyzer", "Detection failed", it) }
             .addOnCompleteListener { proxy.close() }
+=======
+    private val objectDetector = ObjectDetection.getClient(objectDetectorOptions)
+
+    override fun analyze(imageProxy: androidx.camera.core.ImageProxy) {
+        val mediaImage = imageProxy.image
+        if (mediaImage != null) {
+            val image = InputImage.fromMediaImage(mediaImage, imageProxy.imageInfo.rotationDegrees)
+            objectDetector.process(image)
+                .addOnSuccessListener {
+                    listener(it)
+                }
+                .addOnFailureListener {
+                    Log.e("ObjectDetectorAnalyzer", "Object detection failed", it)
+                }
+                .addOnCompleteListener { imageProxy.close() }
+        }
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     }
 }

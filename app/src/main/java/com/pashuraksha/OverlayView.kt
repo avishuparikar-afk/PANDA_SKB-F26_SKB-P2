@@ -21,6 +21,7 @@ class OverlayView @JvmOverloads constructor(
     private val scanLinePaint = Paint(Paint.ANTI_ALIAS_FLAG)
     private var scanLinePosition = 0f // 0 to 1, representing top to bottom
 
+<<<<<<< HEAD
     // Bounding box data
     private var boundingBoxes: List<RectF> = emptyList()
     private var boxLabels: List<String> = emptyList()
@@ -46,6 +47,8 @@ class OverlayView @JvmOverloads constructor(
         textSize = 26f
     }
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     init {
         paint.style = Paint.Style.STROKE
         paint.strokeWidth = 4f
@@ -101,6 +104,7 @@ class OverlayView @JvmOverloads constructor(
         val scanY = height * scanLinePosition
         canvas.drawLine(0f, scanY, width.toFloat(), scanY, scanLinePaint)
 
+<<<<<<< HEAD
         // Draw bounding boxes for detected objects
         drawDetectedObjects(canvas)
     }
@@ -215,13 +219,20 @@ class OverlayView @JvmOverloads constructor(
             score.contains("Healthy") || score.contains("✅") -> Color.rgb(76, 175, 80) // Green for healthy
             else -> ContextCompat.getColor(context, R.color.bioluminescent_green)
         }
+=======
+        // TODO: Draw bounding boxes and health overlays for detected cattle
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     }
 
     // Function to draw bounding boxes for detected objects
     fun drawBoundingBoxes(boxes: List<RectF>, labels: List<String>, healthScores: List<String>) {
+<<<<<<< HEAD
         boundingBoxes = boxes
         boxLabels = labels
         boxScores = healthScores
+=======
+        // This will be implemented later when ML Kit is integrated
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
         invalidate()
     }
 }

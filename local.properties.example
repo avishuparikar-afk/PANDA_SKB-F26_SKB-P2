@@ -1,0 +1,9 @@
+# Rename this file to `local.properties` (or add these lines to your existing one)
+# NEVER commit local.properties to git — it's in .gitignore by default.
+#
+# Get a Gemini API key from: https://aistudio.google.com/apikey
+# Paste it below, replacing YOUR_KEY_HERE.
+GEMINI_API_KEY=YOUR_KEY_HERE
+
+# Android SDK path (Android Studio usually fills this in automatically):
+# sdk.dir=/Users/you/Library/Android/sdk

@@ -1,4 +1,5 @@
 rule_id,symptoms_required,suggested_disease,confidence,urgency,animal
+<<<<<<< HEAD
 R001,fever+mouth_sores+limping,Foot and Mouth Disease,90,high,cow
 R002,skin_nodules+fever,Lumpy Skin Disease,85,high,cow
 R003,skin_nodules+fever+weakness,Lumpy Skin Disease,92,high,cow
@@ -67,3 +68,25 @@ R065,sudden_death+swollen_head,Avian Influenza,90,critical,duck
 R066,fever+weakness+skin_lesions,African Swine Fever,92,critical,pig
 R067,fever+weakness+purple_comb,Classical Swine Fever,88,critical,pig
 R068,skin_lesions+fever+limping,Swine Erysipelas,82,high,pig
+=======
+R001,fever+mouth_sores+limping,Foot and Mouth Disease,85,high,cow
+R002,skin_nodules+fever,Lumpy Skin Disease,80,high,cow
+R003,udder_swelling+milk_low,Mastitis,88,high,cow
+R004,fever+cough+breathing_difficulty,Pneumonia,75,high,cow
+R005,limping+swelling,Foot Rot,70,medium,cow
+R006,diarrhea+weakness,Bovine Viral Diarrhea,65,medium,cow
+R007,bloat+breathing_difficulty,Bloat,85,high,cow
+R008,abortion+weakness,Brucellosis,70,high,cow
+R009,heat_stress+breathing_difficulty,Heat Stress,80,medium,buffalo
+R010,fever+swelling+sudden_death,Hemorrhagic Septicemia,90,critical,buffalo
+R011,fever+nasal_discharge+diarrhea,PPR,82,critical,goat
+R012,bloody_diarrhea+weakness,Coccidiosis,75,high,goat
+R013,sudden_death+convulsions,Enterotoxemia,88,critical,goat
+R014,fever+mouth_sores+limping,Bluetongue,80,critical,sheep
+R015,sudden_death+twisted_neck,Newcastle Disease,90,critical,chicken
+R016,bloody_diarrhea+weakness,Coccidiosis,80,high,chicken
+R017,sudden_death+swollen_head,Avian Influenza,92,critical,chicken
+R018,bloody_diarrhea+vomiting,Parvovirus,88,critical,dog
+R019,aggression+foaming,Rabies,95,critical,dog
+R020,cough+nasal_discharge,Kennel Cough,70,medium,dog
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e

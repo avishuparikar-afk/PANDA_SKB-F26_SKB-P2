@@ -76,24 +76,36 @@ drawable input_rounded
 drawable pill_safe
 drawable rounded_corner_background
 font poppins
+<<<<<<< HEAD
 id aiAdviceButton
 id aiStatusCard
 id aiStatusDetail
 id aiStatusEmoji
 id aiStatusText
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id analyzeImageButton
 id animalsDetectedTextView
 id appNameTextView
 id bottom_navigation
+<<<<<<< HEAD
 id btnAttachImage
 id btnBack
 id btnChatbot
 id btnDownloadModel
+=======
+id btnBack
+id btnChatbot
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id btnHealthReport
 id btnImmunityCalculator
 id btnMic
 id btnOutbreakMap
+<<<<<<< HEAD
 id btnRemoveImage
+=======
+id btnPashupatinathMode
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id btnSend
 id btnStartScan
 id calculateButton
@@ -119,18 +131,24 @@ id diseaseTextView
 id districtAutoCompleteTextView
 id districtLayout
 id divider
+<<<<<<< HEAD
 id downloadAiCard
 id downloadProgressBar
 id downloadProgressText
 id downloadSizeText
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id findVetButton
 id fmdRiskTextView
 id greetingTextView
 id hazardsDetectedTextView
 id homeFragment
 id hudPanel
+<<<<<<< HEAD
 id imagePreview
 id imagePreviewBar
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id imageView
 id immunityFragment
 id immunityPieChart
@@ -141,7 +159,10 @@ id lsdRiskTextView
 id mapFragment
 id mapView
 id mastitisRiskTextView
+<<<<<<< HEAD
 id messageImage
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id messageInput
 id messageText
 id messagesRecyclerView
@@ -158,6 +179,7 @@ id radioCow
 id radioMixed
 id recommendationsLayout
 id recommendationsTextView
+<<<<<<< HEAD
 id reportAlertTextView
 id reportDateTextView
 id reportDiseaseTextView
@@ -168,6 +190,9 @@ id reportRecommendationTextView
 id reportTotalCattleTextView
 id reportVillageTextView
 id reportWatchTextView
+=======
+id reportFragment
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id resultLayout
 id riskChipText
 id riskLevelTextView
@@ -182,9 +207,13 @@ id speakResultButton
 id speedSlider
 id speedTextView
 id splashAnimationView
+<<<<<<< HEAD
 id statHealthyPct
 id statImmunityScore
 id statScannedCount
+=======
+id statImmunityScore
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 id statScannedToday
 id statusDot
 id statusText
@@ -217,7 +246,10 @@ layout fragment_report
 layout fragment_scan
 layout fragment_settings
 layout item_message_bot
+<<<<<<< HEAD
 layout item_message_image
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 layout item_message_user
 layout item_stat_card
 menu bottom_nav_menu

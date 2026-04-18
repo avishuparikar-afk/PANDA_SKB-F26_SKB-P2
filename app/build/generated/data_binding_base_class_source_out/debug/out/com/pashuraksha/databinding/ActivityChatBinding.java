@@ -5,7 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+<<<<<<< HEAD
 import android.widget.ImageView;
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -24,30 +27,39 @@ public final class ActivityChatBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+<<<<<<< HEAD
   public final TextView btnAttachImage;
 
   @NonNull
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
   public final TextView btnBack;
 
   @NonNull
   public final TextView btnMic;
 
   @NonNull
+<<<<<<< HEAD
   public final TextView btnRemoveImage;
 
   @NonNull
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
   public final TextView btnSend;
 
   @NonNull
   public final View divider;
 
   @NonNull
+<<<<<<< HEAD
   public final ImageView imagePreview;
 
   @NonNull
   public final LinearLayout imagePreviewBar;
 
   @NonNull
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
   public final LinearLayout inputBar;
 
   @NonNull
@@ -68,6 +80,7 @@ public final class ActivityChatBinding implements ViewBinding {
   @NonNull
   public final TextView typingIndicator;
 
+<<<<<<< HEAD
   private ActivityChatBinding(@NonNull ConstraintLayout rootView, @NonNull TextView btnAttachImage,
       @NonNull TextView btnBack, @NonNull TextView btnMic, @NonNull TextView btnRemoveImage,
       @NonNull TextView btnSend, @NonNull View divider, @NonNull ImageView imagePreview,
@@ -84,6 +97,19 @@ public final class ActivityChatBinding implements ViewBinding {
     this.divider = divider;
     this.imagePreview = imagePreview;
     this.imagePreviewBar = imagePreviewBar;
+=======
+  private ActivityChatBinding(@NonNull ConstraintLayout rootView, @NonNull TextView btnBack,
+      @NonNull TextView btnMic, @NonNull TextView btnSend, @NonNull View divider,
+      @NonNull LinearLayout inputBar, @NonNull EditText messageInput,
+      @NonNull RecyclerView messagesRecyclerView, @NonNull View statusDot,
+      @NonNull TextView statusText, @NonNull LinearLayout topBar,
+      @NonNull TextView typingIndicator) {
+    this.rootView = rootView;
+    this.btnBack = btnBack;
+    this.btnMic = btnMic;
+    this.btnSend = btnSend;
+    this.divider = divider;
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     this.inputBar = inputBar;
     this.messageInput = messageInput;
     this.messagesRecyclerView = messagesRecyclerView;
@@ -120,12 +146,15 @@ public final class ActivityChatBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+<<<<<<< HEAD
       id = R.id.btnAttachImage;
       TextView btnAttachImage = ViewBindings.findChildViewById(rootView, id);
       if (btnAttachImage == null) {
         break missingId;
       }
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
       id = R.id.btnBack;
       TextView btnBack = ViewBindings.findChildViewById(rootView, id);
       if (btnBack == null) {
@@ -138,12 +167,15 @@ public final class ActivityChatBinding implements ViewBinding {
         break missingId;
       }
 
+<<<<<<< HEAD
       id = R.id.btnRemoveImage;
       TextView btnRemoveImage = ViewBindings.findChildViewById(rootView, id);
       if (btnRemoveImage == null) {
         break missingId;
       }
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
       id = R.id.btnSend;
       TextView btnSend = ViewBindings.findChildViewById(rootView, id);
       if (btnSend == null) {
@@ -156,6 +188,7 @@ public final class ActivityChatBinding implements ViewBinding {
         break missingId;
       }
 
+<<<<<<< HEAD
       id = R.id.imagePreview;
       ImageView imagePreview = ViewBindings.findChildViewById(rootView, id);
       if (imagePreview == null) {
@@ -168,6 +201,8 @@ public final class ActivityChatBinding implements ViewBinding {
         break missingId;
       }
 
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
       id = R.id.inputBar;
       LinearLayout inputBar = ViewBindings.findChildViewById(rootView, id);
       if (inputBar == null) {
@@ -210,9 +245,15 @@ public final class ActivityChatBinding implements ViewBinding {
         break missingId;
       }
 
+<<<<<<< HEAD
       return new ActivityChatBinding((ConstraintLayout) rootView, btnAttachImage, btnBack, btnMic,
           btnRemoveImage, btnSend, divider, imagePreview, imagePreviewBar, inputBar, messageInput,
           messagesRecyclerView, statusDot, statusText, topBar, typingIndicator);
+=======
+      return new ActivityChatBinding((ConstraintLayout) rootView, btnBack, btnMic, btnSend, divider,
+          inputBar, messageInput, messagesRecyclerView, statusDot, statusText, topBar,
+          typingIndicator);
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

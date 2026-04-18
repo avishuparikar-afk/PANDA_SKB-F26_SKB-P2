@@ -4,21 +4,31 @@ package com.pashuraksha.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
 import android.widget.TextView;
+=======
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
+<<<<<<< HEAD
 import androidx.viewbinding.ViewBindings;
 import com.pashuraksha.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
+=======
+import com.pashuraksha.R;
+import java.lang.NullPointerException;
+import java.lang.Override;
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
 
 public final class FragmentReportBinding implements ViewBinding {
   @NonNull
   private final NestedScrollView rootView;
 
+<<<<<<< HEAD
   @NonNull
   public final TextView reportAlertTextView;
 
@@ -71,6 +81,10 @@ public final class FragmentReportBinding implements ViewBinding {
     this.reportWatchTextView = reportWatchTextView;
     this.statHealthyPct = statHealthyPct;
     this.statScannedCount = statScannedCount;
+=======
+  private FragmentReportBinding(@NonNull NestedScrollView rootView) {
+    this.rootView = rootView;
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
   }
 
   @Override
@@ -96,6 +110,7 @@ public final class FragmentReportBinding implements ViewBinding {
 
   @NonNull
   public static FragmentReportBinding bind(@NonNull View rootView) {
+<<<<<<< HEAD
     // The body of this method is generated in a way you would not otherwise write.
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
@@ -173,5 +188,12 @@ public final class FragmentReportBinding implements ViewBinding {
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
+=======
+    if (rootView == null) {
+      throw new NullPointerException("rootView");
+    }
+
+    return new FragmentReportBinding((NestedScrollView) rootView);
+>>>>>>> 6f0c543afecea5a353f8c95925748291d2e2578e
   }
 }
